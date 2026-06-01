@@ -8,7 +8,7 @@ import {
   Wine, Briefcase, Plug, ArrowRight,
 } from "lucide-react";
 
-import heroTower from "@/assets/hero-tower.jpg";
+import heroTower from "@/assets/hero-tower.png.asset.json";
 import interiorLiving from "@/assets/interior-living.jpg";
 import rooftop from "@/assets/rooftop.jpg";
 import pool from "@/assets/pool.jpg";
@@ -28,9 +28,9 @@ export const Route = createFileRoute("/")({
       { name: "description", content: "Empreendimento mais alto da Zona Norte de Natal. Apartamentos de 2 quartos, 41 a 65m², lazer completo, vista para o Potengi. Agende sua visita." },
       { property: "og:title", content: "Torres do Potengi — Alto Padrão em Natal" },
       { property: "og:description", content: "A melhor vista do Potengi. 18 pavimentos, lazer completo, financiamento MCMV." },
-      { property: "og:image", content: heroTower },
+      { property: "og:image", content: heroTower.url },
       { property: "og:url", content: "/" },
-      { name: "twitter:image", content: heroTower },
+      { name: "twitter:image", content: heroTower.url },
     ],
     links: [{ rel: "canonical", href: "/" }],
     scripts: [{
@@ -89,7 +89,7 @@ const plans = [
 ];
 
 const gallery = [
-  { src: heroTower, alt: "Fachada Torres do Potengi", caption: "Fachada — 18 pavimentos com vista privilegiada" },
+  { src: heroTower.url, alt: "Fachada Torres do Potengi", caption: "Fachada — 18 pavimentos com vista privilegiada" },
   { src: interiorLiving, alt: "Living com varanda", caption: "Living integrado à varanda gourmet" },
   { src: rooftop, alt: "Wine Rooftop", caption: "Wine Rooftop — vista para o rio e o mar" },
   { src: pool, alt: "Piscina e área de lazer", caption: "Piscina e deck molhado" },
@@ -139,7 +139,7 @@ function LandingPage() {
       {/* HERO */}
       <section id="top" className="relative h-screen min-h-[640px] w-full overflow-hidden">
         <img
-          src={heroTower}
+          src={heroTower.url}
           alt="Torres do Potengi vista aérea ao pôr do sol"
           className="absolute inset-0 h-full w-full object-cover"
           width={1920}
