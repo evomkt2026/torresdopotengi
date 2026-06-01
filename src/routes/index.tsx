@@ -8,7 +8,7 @@ import {
   Wine, Briefcase, Plug, ArrowRight,
 } from "lucide-react";
 
-import heroTower from "@/assets/hero-tower.jpg";
+import heroTower from "@/assets/hero-tower.png.asset.json";
 import interiorLiving from "@/assets/interior-living.jpg";
 import rooftop from "@/assets/rooftop.jpg";
 import pool from "@/assets/pool.jpg";
