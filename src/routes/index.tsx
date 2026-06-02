@@ -14,8 +14,9 @@ import rooftop from "@/assets/rooftop.jpg";
 import pool from "@/assets/pool.jpg";
 import sportsbar from "@/assets/sportsbar.jpg";
 import coworking from "@/assets/coworking.jpg";
-import plan65 from "@/assets/plan-65.jpg";
-import plan41 from "@/assets/plan-41.jpg";
+import planSmart from "@/assets/plans/smart.jpg.asset.json";
+import planLiving from "@/assets/plans/living.jpg.asset.json";
+import planComfort from "@/assets/plans/comfort.jpg.asset.json";
 import galAerial from "@/assets/gallery/aerial.jpeg.asset.json";
 import galFacade from "@/assets/gallery/facade.jpg.asset.json";
 import galRooftop from "@/assets/gallery/rooftop.jpg.asset.json";
@@ -93,8 +94,46 @@ const amenities = [
 ];
 
 const plans = [
-  { img: plan65, area: "65 m²", title: "Planta Maior", desc: "2 quartos sendo 1 suíte, varanda gourmet ampliada e living integrado." },
-  { img: plan41, area: "41 m²", title: "Planta Compacta", desc: "2 quartos otimizados, design inteligente e área social funcional." },
+  {
+    img: planSmart.url,
+    area: "41 m²",
+    title: "Planta SMART",
+    desc: "2 quartos, 1 banheiro social, 1 vaga e sala/cozinha integrada.",
+    features: [
+      "Sala de estar/jantar e cozinha integrada",
+      "02 quartos",
+      "BWC social",
+      "Laje técnica",
+      "01 vaga de garagem",
+    ],
+  },
+  {
+    img: planLiving.url,
+    area: "48,25 m²",
+    title: "Planta LIVING",
+    desc: "2 quartos (1 suíte), 2 banheiros, 1 vaga e sala/cozinha integrada.",
+    features: [
+      "Sala de estar/jantar e cozinha integrada",
+      "02 quartos, sendo 01 suíte",
+      "BWC social",
+      "Laje técnica",
+      "01 vaga de garagem",
+    ],
+  },
+  {
+    img: planComfort.url,
+    area: "65,85 m²",
+    title: "Planta COMFORT",
+    desc: "2 quartos (1 suíte), 2 banheiros, 2 vagas e varanda.",
+    features: [
+      "Sala de estar/jantar e cozinha integrada",
+      "Varanda",
+      "02 quartos, sendo 01 suíte",
+      "BWC social",
+      "Laje técnica",
+      "02 vagas de garagem",
+    ],
+  },
 ];
 
 const gallery = [
@@ -314,14 +353,14 @@ function LandingPage() {
             <p className="eyebrow mb-5">Plantas Disponíveis</p>
             <h2 className="text-4xl md:text-5xl text-balance">Opções pensadas para cada perfil.</h2>
           </div>
-          <div className="grid gap-10 md:grid-cols-2">
+          <div className="grid gap-10 md:grid-cols-3">
             {plans.map((p, i) => (
-              <div key={p.title} className="group">
+              <div key={p.title} className="group flex flex-col">
                 <button
                   onClick={() => setLightbox(gallery.length + i)}
                   className="block w-full overflow-hidden bg-sand shadow-card aspect-[4/3]"
                 >
-                  <img src={p.img} alt={p.title} loading="lazy" className="zoom-img h-full w-full object-cover" />
+                  <img src={p.img} alt={p.title} loading="lazy" className="zoom-img h-full w-full object-contain bg-white" />
                 </button>
                 <div className="mt-6 flex items-start justify-between gap-6">
                   <div>
@@ -329,10 +368,18 @@ function LandingPage() {
                     <p className="mt-2 text-sm text-muted-foreground leading-relaxed">{p.desc}</p>
                   </div>
                   <div className="shrink-0 border border-border px-4 py-3 text-center">
-                    <div className="text-xl font-light">{p.area}</div>
+                    <div className="text-lg font-light whitespace-nowrap">{p.area}</div>
                     <div className="text-[0.6rem] tracking-[0.25em] uppercase text-muted-foreground mt-1">Privativa</div>
                   </div>
                 </div>
+                <ul className="mt-6 space-y-2 border-t border-border pt-6">
+                  {p.features.map((f) => (
+                    <li key={f} className="flex items-start gap-3 text-sm text-foreground/80">
+                      <span className="mt-2 h-1 w-1 shrink-0 rounded-full bg-gold" />
+                      <span>{f}</span>
+                    </li>
+                  ))}
+                </ul>
               </div>
             ))}
           </div>
