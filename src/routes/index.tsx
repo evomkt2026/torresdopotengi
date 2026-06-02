@@ -491,31 +491,33 @@ function LandingPage() {
         <div className="mx-auto max-w-7xl px-6 md:px-10 py-16">
           <div className="grid gap-12 md:grid-cols-4">
             <div className="md:col-span-2">
-              <div className="text-[0.65rem] tracking-[0.35em] text-gold uppercase mb-2">Residencial</div>
-              <div className="text-2xl font-light text-cream">Torres do Potengi</div>
-              <p className="mt-5 text-sm max-w-sm leading-relaxed">
-                Empreendimento residencial de alto padrão na Zona Norte de Natal. Construído para morar com qualidade ou investir com segurança.
+              <div className="bg-cream/95 inline-block p-5 rounded-sm">
+                <img src={aliancaLogo.url} alt="Aliança Imobiliária" className="h-24 w-auto" />
+              </div>
+              <p className="mt-6 text-sm max-w-sm leading-relaxed">
+                Aliança Imobiliária — corretora oficial do Residencial Torres do Potengi na Zona Norte de Natal.
               </p>
             </div>
             <div>
               <div className="text-xs tracking-[0.25em] uppercase text-gold mb-4">Contato</div>
               <ul className="space-y-2 text-sm">
-                <li>+55 (84) 99999-9999</li>
+                <li><a href="tel:+558432343333" className="hover:text-cream transition">(84) 3234-3333</a></li>
                 <li><a href={whatsappUrl()} target="_blank" rel="noopener noreferrer" className="hover:text-cream transition">WhatsApp</a></li>
-                <li>contato@torresdopotengi.com.br</li>
+                <li>Av. Amintas Barros, 3054</li>
+                <li>Lagoa Nova — Natal/RN</li>
               </ul>
             </div>
             <div>
               <div className="text-xs tracking-[0.25em] uppercase text-gold mb-4">Redes</div>
               <div className="flex gap-3">
-                <a href="#" aria-label="Instagram" className="border border-primary-foreground/20 p-2.5 hover:bg-primary-foreground/10 transition"><Instagram className="h-4 w-4" strokeWidth={1.6} /></a>
-                <a href="#" aria-label="Facebook" className="border border-primary-foreground/20 p-2.5 hover:bg-primary-foreground/10 transition"><Facebook className="h-4 w-4" strokeWidth={1.6} /></a>
+                <a href="https://www.instagram.com/aliancaimob" target="_blank" rel="noopener noreferrer" aria-label="Instagram" className="border border-primary-foreground/20 p-2.5 hover:bg-primary-foreground/10 transition"><Instagram className="h-4 w-4" strokeWidth={1.6} /></a>
+                <a href="https://www.facebook.com/alianca.imobiliaria" target="_blank" rel="noopener noreferrer" aria-label="Facebook" className="border border-primary-foreground/20 p-2.5 hover:bg-primary-foreground/10 transition"><Facebook className="h-4 w-4" strokeWidth={1.6} /></a>
               </div>
-              <div className="mt-6 text-xs text-primary-foreground/50">CRECI/RN 0000-J</div>
+              <div className="mt-6 text-xs text-primary-foreground/50">CRECI: 1621-J — 17ª Região</div>
             </div>
           </div>
           <div className="mt-14 pt-8 border-t border-primary-foreground/10 flex flex-wrap items-center justify-between gap-4 text-xs text-primary-foreground/50">
-            <div>© {new Date().getFullYear()} Torres do Potengi. Todos os direitos reservados.</div>
+            <div>© {new Date().getFullYear()} Aliança Imobiliária. Todos os direitos reservados.</div>
             <div>Imagens meramente ilustrativas.</div>
           </div>
         </div>
