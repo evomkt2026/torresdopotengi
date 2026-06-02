@@ -456,19 +456,28 @@ function LandingPage() {
                 Nossa equipe entrará em contato com tabela atualizada, plantas, vídeo do empreendimento e condições especiais de lançamento.
               </p>
               <div className="mt-10 space-y-4 text-sm">
+                <a href="tel:+558432343333" className="flex items-center gap-3 hover:text-bronze transition">
+                  <Phone className="h-4 w-4 text-bronze" strokeWidth={1.6} />
+                  (84) 3234-3333
+                </a>
                 <a href={whatsappUrl()} target="_blank" rel="noopener noreferrer" className="flex items-center gap-3 hover:text-bronze transition">
                   <Phone className="h-4 w-4 text-bronze" strokeWidth={1.6} />
-                  +55 (84) 99999-9999
-                </a>
-                <a href="mailto:contato@torresdopotengi.com.br" className="flex items-center gap-3 hover:text-bronze transition">
-                  <Mail className="h-4 w-4 text-bronze" strokeWidth={1.6} />
-                  contato@torresdopotengi.com.br
+                  WhatsApp
                 </a>
                 <div className="flex items-start gap-3">
                   <MapPin className="h-4 w-4 text-bronze mt-0.5" strokeWidth={1.6} />
-                  Av. Dr. João Medeiros Filho — Panatis, Natal/RN
+                  Av. Amintas Barros, 3054 — Lagoa Nova, Natal/RN
+                </div>
+                <div className="flex items-start gap-3 text-muted-foreground">
+                  <Shield className="h-4 w-4 text-bronze mt-0.5" strokeWidth={1.6} />
+                  CRECI: 1621-J — 17ª Região
                 </div>
               </div>
+              <div className="mt-10 pt-8 border-t border-border">
+                <p className="text-[0.65rem] tracking-[0.3em] uppercase text-muted-foreground mb-4">Corretora responsável</p>
+                <img src={aliancaLogo.url} alt="Aliança Imobiliária" className="h-20 w-auto" />
+              </div>
+
             </div>
             <div className="bg-card p-8 md:p-10 shadow-card border border-border">
               <ContactForm />
