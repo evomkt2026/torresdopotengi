@@ -172,9 +172,8 @@ function LandingPage() {
       {/* NAV */}
       <header className="fixed top-0 left-0 right-0 z-40 backdrop-blur-md bg-background/70 border-b border-border/60">
         <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-4 md:px-10">
-          <a href="#top" className="flex flex-col leading-tight">
-            <span className="text-[0.65rem] tracking-[0.35em] text-bronze uppercase">Residencial</span>
-            <span className="text-lg font-medium tracking-tight">Torres do Potengi</span>
+          <a href="#top" className="flex items-center">
+            <img src={torresLogo.url} alt="Residencial Torres do Potengi" className="h-12 md:h-14 w-auto" />
           </a>
           <nav className="hidden md:flex items-center gap-9 text-sm tracking-wide text-muted-foreground">
             <a href="#sobre" className="hover:text-foreground transition">Sobre</a>
