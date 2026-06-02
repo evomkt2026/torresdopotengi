@@ -26,6 +26,8 @@ import galGym from "@/assets/gallery/gym.jpg.asset.json";
 import galParty from "@/assets/gallery/party.jpeg.asset.json";
 import galKids from "@/assets/gallery/kids.jpeg.asset.json";
 import galCarwash from "@/assets/gallery/carwash.png.asset.json";
+import torresLogo from "@/assets/logos/torres.png.asset.json";
+import aliancaLogo from "@/assets/logos/alianca.png.asset.json";
 
 import { WhatsAppButton, whatsappUrl } from "@/components/WhatsAppButton";
 import { Lightbox } from "@/components/Lightbox";
