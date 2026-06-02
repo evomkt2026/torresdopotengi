@@ -16,6 +16,15 @@ import sportsbar from "@/assets/sportsbar.jpg";
 import coworking from "@/assets/coworking.jpg";
 import plan65 from "@/assets/plan-65.jpg";
 import plan41 from "@/assets/plan-41.jpg";
+import galAerial from "@/assets/gallery/aerial.jpeg.asset.json";
+import galFacade from "@/assets/gallery/facade.jpg.asset.json";
+import galRooftop from "@/assets/gallery/rooftop.jpg.asset.json";
+import galPoolDay from "@/assets/gallery/pool-day.jpg.asset.json";
+import galPoolSunset from "@/assets/gallery/pool-sunset.png.asset.json";
+import galGym from "@/assets/gallery/gym.jpg.asset.json";
+import galParty from "@/assets/gallery/party.jpeg.asset.json";
+import galKids from "@/assets/gallery/kids.jpeg.asset.json";
+import galCarwash from "@/assets/gallery/carwash.png.asset.json";
 
 import { WhatsAppButton, whatsappUrl } from "@/components/WhatsAppButton";
 import { Lightbox } from "@/components/Lightbox";
@@ -89,12 +98,15 @@ const plans = [
 ];
 
 const gallery = [
-  { src: heroTower.url, alt: "Fachada Torres do Potengi", caption: "Fachada — 18 pavimentos com vista privilegiada" },
-  { src: interiorLiving, alt: "Living com varanda", caption: "Living integrado à varanda gourmet" },
-  { src: rooftop, alt: "Wine Rooftop", caption: "Wine Rooftop — vista para o rio e o mar" },
-  { src: pool, alt: "Piscina e área de lazer", caption: "Piscina e deck molhado" },
-  { src: sportsbar, alt: "Sports Bar", caption: "Sports Bar e área de convivência" },
-  { src: coworking, alt: "Coworking", caption: "Coworking equipado" },
+  { src: galFacade.url, alt: "Fachada Torres do Potengi", caption: "Fachada — 18 pavimentos com vista privilegiada" },
+  { src: galAerial.url, alt: "Vista aérea do empreendimento", caption: "Vista aérea — entre o Potengi e o mar" },
+  { src: galPoolSunset.url, alt: "Piscina ao pôr do sol", caption: "Piscina ao pôr do sol" },
+  { src: galPoolDay.url, alt: "Piscina e deck", caption: "Piscina com deck molhado e lounges" },
+  { src: galRooftop.url, alt: "Wine Rooftop", caption: "Wine Rooftop — vista para o rio e o mar" },
+  { src: galParty.url, alt: "Salão de festas", caption: "Salão de festas integrado ao lazer" },
+  { src: galGym.url, alt: "Academia equipada", caption: "Academia equipada com vista" },
+  { src: galKids.url, alt: "Espaço kids", caption: "Espaço kids temático" },
+  { src: galCarwash.url, alt: "Espaço Car Wash", caption: "Espaço Car Wash" },
 ];
 
 const testimonials = [
