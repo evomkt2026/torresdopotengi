@@ -442,56 +442,6 @@ function LandingPage() {
         </div>
       </section>
 
-      {/* INVESTIR */}
-      <section className="relative py-24 md:py-36 overflow-hidden">
-        <img src={rooftop} alt="" className="absolute inset-0 h-full w-full object-cover" loading="lazy" />
-        <div className="absolute inset-0 bg-foreground/75" />
-        <div className="relative mx-auto max-w-7xl px-6 md:px-10 text-cream">
-          <div className="max-w-2xl mb-16">
-            <p className="text-xs tracking-[0.28em] uppercase text-gold mb-5">Por que investir</p>
-            <h2 className="text-4xl md:text-5xl text-balance">Um ativo com potencial real.</h2>
-          </div>
-          <div className="grid gap-px bg-white/15 md:grid-cols-2 lg:grid-cols-4">
-            {[
-              { t: "Região em expansão", d: "Zona Norte com crescimento acelerado e nova infraestrutura urbana." },
-              { t: "Valorização constante", d: "Empreendimentos de alto padrão geram retorno acima da média." },
-              { t: "Renda passiva", d: "Demanda crescente por locação na região, com alta procura turística." },
-              { t: "Segurança jurídica", d: "Construtora consolidada, documentação aprovada e contrato transparente." },
-            ].map((b) => (
-              <div key={b.t} className="bg-foreground/30 backdrop-blur-sm p-8">
-                <h3 className="text-lg font-medium text-cream">{b.t}</h3>
-                <p className="mt-3 text-sm text-cream/75 leading-relaxed">{b.d}</p>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* DEPOIMENTOS */}
-      <section className="bg-sand/60 py-24 md:py-36">
-        <div className="mx-auto max-w-7xl px-6 md:px-10">
-          <div className="mb-16 max-w-2xl">
-            <p className="eyebrow mb-5">Depoimentos</p>
-            <h2 className="text-4xl md:text-5xl text-balance">Quem já vive a experiência.</h2>
-          </div>
-          <div className="grid gap-8 md:grid-cols-3">
-            {testimonials.map((t) => (
-              <figure key={t.name} className="bg-background p-8 md:p-10 hover-lift">
-                <div className="flex gap-1 mb-5">
-                  {Array.from({ length: 5 }).map((_, i) => (
-                    <Star key={i} className="h-4 w-4 fill-gold text-gold" strokeWidth={0} />
-                  ))}
-                </div>
-                <blockquote className="text-base leading-relaxed text-foreground/90">"{t.text}"</blockquote>
-                <figcaption className="mt-6 border-t border-border pt-5">
-                  <div className="font-medium">{t.name}</div>
-                  <div className="text-xs tracking-wider uppercase text-muted-foreground mt-1">{t.role}</div>
-                </figcaption>
-              </figure>
-            ))}
-          </div>
-        </div>
-      </section>
 
       {/* CONTATO */}
       <section id="contato" className="py-24 md:py-36">
