@@ -431,7 +431,7 @@ function LandingPage() {
               <div className="aspect-[4/3] w-full overflow-hidden shadow-card border border-border">
                 <iframe
                   title="Mapa Torres do Potengi"
-                  src="https://www.google.com/maps?q=Avenida+Dr.+João+Medeiros+Filho,+Panatis,+Natal,+RN&output=embed"
+                  src="https://www.google.com/maps?q=Av.+Amintas+Barros,+3054,+Lagoa+Nova,+Natal,+RN&output=embed"
                   className="h-full w-full"
                   loading="lazy"
                   referrerPolicy="no-referrer-when-downgrade"
