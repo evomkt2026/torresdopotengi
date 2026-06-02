@@ -145,11 +145,6 @@ const gallery = [
   { src: galCarwash.url, alt: "Espaço Car Wash", caption: "Espaço Car Wash" },
 ];
 
-const testimonials = [
-  { name: "Mariana Cavalcanti", role: "Investidora", text: "Comprei na planta e o atendimento foi impecável. A região está se valorizando rapidamente." },
-  { name: "Rafael Lima", role: "Morador", text: "A vista do rooftop é simplesmente única em Natal. Vale cada centímetro." },
-  { name: "Patrícia Almeida", role: "Compradora", text: "Estrutura de clube, localização estratégica e condições facilitadas. Decisão certa." },
-];
 
 const locationPoints = [
   "5 min — Escolas de referência",
