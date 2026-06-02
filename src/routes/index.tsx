@@ -3,17 +3,12 @@ import { useState } from "react";
 import {
   MapPin, Shield, Trees, Leaf, Sparkles, Wifi,
   Bed, Bath, Car, Wind, ChefHat, ArrowUpDown,
-  Star, Phone, Mail, Instagram, Facebook,
+  Phone, Instagram, Facebook,
   Waves, Dumbbell, Utensils, Baby, PartyPopper, Trophy,
   Wine, Briefcase, Plug, ArrowRight,
 } from "lucide-react";
 
 import heroTower from "@/assets/hero-tower.png.asset.json";
-import interiorLiving from "@/assets/interior-living.jpg";
-import rooftop from "@/assets/rooftop.jpg";
-import pool from "@/assets/pool.jpg";
-import sportsbar from "@/assets/sportsbar.jpg";
-import coworking from "@/assets/coworking.jpg";
 import planSmart from "@/assets/plans/smart.jpg.asset.json";
 import planLiving from "@/assets/plans/living.jpg.asset.json";
 import planComfort from "@/assets/plans/comfort.jpg.asset.json";
@@ -26,6 +21,8 @@ import galGym from "@/assets/gallery/gym.jpg.asset.json";
 import galParty from "@/assets/gallery/party.jpeg.asset.json";
 import galKids from "@/assets/gallery/kids.jpeg.asset.json";
 import galCarwash from "@/assets/gallery/carwash.png.asset.json";
+import torresLogo from "@/assets/logos/torres.png.asset.json";
+import aliancaLogo from "@/assets/logos/alianca.png.asset.json";
 
 import { WhatsAppButton, whatsappUrl } from "@/components/WhatsAppButton";
 import { Lightbox } from "@/components/Lightbox";
@@ -148,11 +145,6 @@ const gallery = [
   { src: galCarwash.url, alt: "Espaço Car Wash", caption: "Espaço Car Wash" },
 ];
 
-const testimonials = [
-  { name: "Mariana Cavalcanti", role: "Investidora", text: "Comprei na planta e o atendimento foi impecável. A região está se valorizando rapidamente." },
-  { name: "Rafael Lima", role: "Morador", text: "A vista do rooftop é simplesmente única em Natal. Vale cada centímetro." },
-  { name: "Patrícia Almeida", role: "Compradora", text: "Estrutura de clube, localização estratégica e condições facilitadas. Decisão certa." },
-];
 
 const locationPoints = [
   "5 min — Escolas de referência",
@@ -170,9 +162,8 @@ function LandingPage() {
       {/* NAV */}
       <header className="fixed top-0 left-0 right-0 z-40 backdrop-blur-md bg-background/70 border-b border-border/60">
         <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-4 md:px-10">
-          <a href="#top" className="flex flex-col leading-tight">
-            <span className="text-[0.65rem] tracking-[0.35em] text-bronze uppercase">Residencial</span>
-            <span className="text-lg font-medium tracking-tight">Torres do Potengi</span>
+          <a href="#top" className="flex items-center">
+            <img src={torresLogo.url} alt="Residencial Torres do Potengi" className="h-12 md:h-14 w-auto" />
           </a>
           <nav className="hidden md:flex items-center gap-9 text-sm tracking-wide text-muted-foreground">
             <a href="#sobre" className="hover:text-foreground transition">Sobre</a>
@@ -430,7 +421,7 @@ function LandingPage() {
               <div className="aspect-[4/3] w-full overflow-hidden shadow-card border border-border">
                 <iframe
                   title="Mapa Torres do Potengi"
-                  src="https://www.google.com/maps?q=Avenida+Dr.+João+Medeiros+Filho,+Panatis,+Natal,+RN&output=embed"
+                  src="https://www.google.com/maps?q=Av.+Amintas+Barros,+3054,+Lagoa+Nova,+Natal,+RN&output=embed"
                   className="h-full w-full"
                   loading="lazy"
                   referrerPolicy="no-referrer-when-downgrade"
@@ -441,56 +432,6 @@ function LandingPage() {
         </div>
       </section>
 
-      {/* INVESTIR */}
-      <section className="relative py-24 md:py-36 overflow-hidden">
-        <img src={rooftop} alt="" className="absolute inset-0 h-full w-full object-cover" loading="lazy" />
-        <div className="absolute inset-0 bg-foreground/75" />
-        <div className="relative mx-auto max-w-7xl px-6 md:px-10 text-cream">
-          <div className="max-w-2xl mb-16">
-            <p className="text-xs tracking-[0.28em] uppercase text-gold mb-5">Por que investir</p>
-            <h2 className="text-4xl md:text-5xl text-balance">Um ativo com potencial real.</h2>
-          </div>
-          <div className="grid gap-px bg-white/15 md:grid-cols-2 lg:grid-cols-4">
-            {[
-              { t: "Região em expansão", d: "Zona Norte com crescimento acelerado e nova infraestrutura urbana." },
-              { t: "Valorização constante", d: "Empreendimentos de alto padrão geram retorno acima da média." },
-              { t: "Renda passiva", d: "Demanda crescente por locação na região, com alta procura turística." },
-              { t: "Segurança jurídica", d: "Construtora consolidada, documentação aprovada e contrato transparente." },
-            ].map((b) => (
-              <div key={b.t} className="bg-foreground/30 backdrop-blur-sm p-8">
-                <h3 className="text-lg font-medium text-cream">{b.t}</h3>
-                <p className="mt-3 text-sm text-cream/75 leading-relaxed">{b.d}</p>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* DEPOIMENTOS */}
-      <section className="bg-sand/60 py-24 md:py-36">
-        <div className="mx-auto max-w-7xl px-6 md:px-10">
-          <div className="mb-16 max-w-2xl">
-            <p className="eyebrow mb-5">Depoimentos</p>
-            <h2 className="text-4xl md:text-5xl text-balance">Quem já vive a experiência.</h2>
-          </div>
-          <div className="grid gap-8 md:grid-cols-3">
-            {testimonials.map((t) => (
-              <figure key={t.name} className="bg-background p-8 md:p-10 hover-lift">
-                <div className="flex gap-1 mb-5">
-                  {Array.from({ length: 5 }).map((_, i) => (
-                    <Star key={i} className="h-4 w-4 fill-gold text-gold" strokeWidth={0} />
-                  ))}
-                </div>
-                <blockquote className="text-base leading-relaxed text-foreground/90">"{t.text}"</blockquote>
-                <figcaption className="mt-6 border-t border-border pt-5">
-                  <div className="font-medium">{t.name}</div>
-                  <div className="text-xs tracking-wider uppercase text-muted-foreground mt-1">{t.role}</div>
-                </figcaption>
-              </figure>
-            ))}
-          </div>
-        </div>
-      </section>
 
       {/* CONTATO */}
       <section id="contato" className="py-24 md:py-36">
@@ -505,19 +446,28 @@ function LandingPage() {
                 Nossa equipe entrará em contato com tabela atualizada, plantas, vídeo do empreendimento e condições especiais de lançamento.
               </p>
               <div className="mt-10 space-y-4 text-sm">
+                <a href="tel:+558432343333" className="flex items-center gap-3 hover:text-bronze transition">
+                  <Phone className="h-4 w-4 text-bronze" strokeWidth={1.6} />
+                  (84) 3234-3333
+                </a>
                 <a href={whatsappUrl()} target="_blank" rel="noopener noreferrer" className="flex items-center gap-3 hover:text-bronze transition">
                   <Phone className="h-4 w-4 text-bronze" strokeWidth={1.6} />
-                  +55 (84) 99999-9999
-                </a>
-                <a href="mailto:contato@torresdopotengi.com.br" className="flex items-center gap-3 hover:text-bronze transition">
-                  <Mail className="h-4 w-4 text-bronze" strokeWidth={1.6} />
-                  contato@torresdopotengi.com.br
+                  WhatsApp
                 </a>
                 <div className="flex items-start gap-3">
                   <MapPin className="h-4 w-4 text-bronze mt-0.5" strokeWidth={1.6} />
-                  Av. Dr. João Medeiros Filho — Panatis, Natal/RN
+                  Av. Amintas Barros, 3054 — Lagoa Nova, Natal/RN
+                </div>
+                <div className="flex items-start gap-3 text-muted-foreground">
+                  <Shield className="h-4 w-4 text-bronze mt-0.5" strokeWidth={1.6} />
+                  CRECI: 1621-J — 17ª Região
                 </div>
               </div>
+              <div className="mt-10 pt-8 border-t border-border">
+                <p className="text-[0.65rem] tracking-[0.3em] uppercase text-muted-foreground mb-4">Corretora responsável</p>
+                <img src={aliancaLogo.url} alt="Aliança Imobiliária" className="h-20 w-auto" />
+              </div>
+
             </div>
             <div className="bg-card p-8 md:p-10 shadow-card border border-border">
               <ContactForm />
@@ -531,31 +481,33 @@ function LandingPage() {
         <div className="mx-auto max-w-7xl px-6 md:px-10 py-16">
           <div className="grid gap-12 md:grid-cols-4">
             <div className="md:col-span-2">
-              <div className="text-[0.65rem] tracking-[0.35em] text-gold uppercase mb-2">Residencial</div>
-              <div className="text-2xl font-light text-cream">Torres do Potengi</div>
-              <p className="mt-5 text-sm max-w-sm leading-relaxed">
-                Empreendimento residencial de alto padrão na Zona Norte de Natal. Construído para morar com qualidade ou investir com segurança.
+              <div className="bg-cream/95 inline-block p-5 rounded-sm">
+                <img src={aliancaLogo.url} alt="Aliança Imobiliária" className="h-24 w-auto" />
+              </div>
+              <p className="mt-6 text-sm max-w-sm leading-relaxed">
+                Aliança Imobiliária — corretora oficial do Residencial Torres do Potengi na Zona Norte de Natal.
               </p>
             </div>
             <div>
               <div className="text-xs tracking-[0.25em] uppercase text-gold mb-4">Contato</div>
               <ul className="space-y-2 text-sm">
-                <li>+55 (84) 99999-9999</li>
+                <li><a href="tel:+558432343333" className="hover:text-cream transition">(84) 3234-3333</a></li>
                 <li><a href={whatsappUrl()} target="_blank" rel="noopener noreferrer" className="hover:text-cream transition">WhatsApp</a></li>
-                <li>contato@torresdopotengi.com.br</li>
+                <li>Av. Amintas Barros, 3054</li>
+                <li>Lagoa Nova — Natal/RN</li>
               </ul>
             </div>
             <div>
               <div className="text-xs tracking-[0.25em] uppercase text-gold mb-4">Redes</div>
               <div className="flex gap-3">
-                <a href="#" aria-label="Instagram" className="border border-primary-foreground/20 p-2.5 hover:bg-primary-foreground/10 transition"><Instagram className="h-4 w-4" strokeWidth={1.6} /></a>
-                <a href="#" aria-label="Facebook" className="border border-primary-foreground/20 p-2.5 hover:bg-primary-foreground/10 transition"><Facebook className="h-4 w-4" strokeWidth={1.6} /></a>
+                <a href="https://www.instagram.com/aliancaimob" target="_blank" rel="noopener noreferrer" aria-label="Instagram" className="border border-primary-foreground/20 p-2.5 hover:bg-primary-foreground/10 transition"><Instagram className="h-4 w-4" strokeWidth={1.6} /></a>
+                <a href="https://www.facebook.com/alianca.imobiliaria" target="_blank" rel="noopener noreferrer" aria-label="Facebook" className="border border-primary-foreground/20 p-2.5 hover:bg-primary-foreground/10 transition"><Facebook className="h-4 w-4" strokeWidth={1.6} /></a>
               </div>
-              <div className="mt-6 text-xs text-primary-foreground/50">CRECI/RN 0000-J</div>
+              <div className="mt-6 text-xs text-primary-foreground/50">CRECI: 1621-J — 17ª Região</div>
             </div>
           </div>
           <div className="mt-14 pt-8 border-t border-primary-foreground/10 flex flex-wrap items-center justify-between gap-4 text-xs text-primary-foreground/50">
-            <div>© {new Date().getFullYear()} Torres do Potengi. Todos os direitos reservados.</div>
+            <div>© {new Date().getFullYear()} Aliança Imobiliária. Todos os direitos reservados.</div>
             <div>Imagens meramente ilustrativas.</div>
           </div>
         </div>
