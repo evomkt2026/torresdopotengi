@@ -3,7 +3,7 @@ import { useState } from "react";
 import {
   MapPin, Shield, Trees, Leaf, Sparkles, Wifi,
   Bed, Bath, Car, Wind, ChefHat, ArrowUpDown,
-  Star, Phone, Mail, Instagram, Facebook,
+  Phone, Instagram, Facebook,
   Waves, Dumbbell, Utensils, Baby, PartyPopper, Trophy,
   Wine, Briefcase, Plug, ArrowRight,
 } from "lucide-react";
