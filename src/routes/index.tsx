@@ -9,11 +9,6 @@ import {
 } from "lucide-react";
 
 import heroTower from "@/assets/hero-tower.png.asset.json";
-import interiorLiving from "@/assets/interior-living.jpg";
-
-import pool from "@/assets/pool.jpg";
-import sportsbar from "@/assets/sportsbar.jpg";
-import coworking from "@/assets/coworking.jpg";
 import planSmart from "@/assets/plans/smart.jpg.asset.json";
 import planLiving from "@/assets/plans/living.jpg.asset.json";
 import planComfort from "@/assets/plans/comfort.jpg.asset.json";
