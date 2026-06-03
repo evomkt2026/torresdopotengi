@@ -66,10 +66,10 @@ export const Route = createFileRoute("/")({
 const differentials = [
   { icon: MapPin, title: "Localização Privilegiada", desc: "Entre as principais avenidas do Panatis, com fácil acesso a toda Natal." },
   { icon: Shield, title: "Segurança 24h", desc: "Portaria blindada, controle de acesso biométrico e monitoramento integral." },
-  { icon: Trees, title: "Lazer Completo", desc: "Verdadeiro condomínio clube com mais de 10 itens equipados." },
+  { icon: Trees, title: "Lazer Completo", desc: "Verdadeiro condomínio clube com mais de 15 itens equipados." },
   { icon: Leaf, title: "Sustentabilidade", desc: "Reuso de água, painéis solares e estação para veículos elétricos." },
   { icon: Sparkles, title: "Acabamentos Premium", desc: "Materiais selecionados, design contemporâneo e atemporal." },
-  { icon: Wifi, title: "Tecnologia & Conforto", desc: "Smart home ready, fibra ótica e infraestrutura de ponta." },
+  { icon: Wine, title: "Rooftop Exclusivo", desc: "Wine Rooftop em cada torre, com vista para o rio e o mar." },
 ];
 
 const specs = [
@@ -82,15 +82,21 @@ const specs = [
 ];
 
 const amenities = [
-  { icon: Waves, title: "Piscina Adulto e Infantil" },
-  { icon: Dumbbell, title: "Academia Equipada" },
-  { icon: Utensils, title: "Espaço Gourmet" },
-  { icon: Baby, title: "Playground" },
-  { icon: PartyPopper, title: "Salão de Festas" },
-  { icon: Trophy, title: "Quadra Poliesportiva" },
-  { icon: Wine, title: "Wine Rooftop" },
+  { icon: Waves, title: "Piscina" },
+  { icon: Dumbbell, title: "Academia" },
   { icon: Briefcase, title: "Coworking" },
-  { icon: Plug, title: "Carregamento Elétrico" },
+  { icon: Wine, title: "Wine Bar" },
+  { icon: Utensils, title: "Sports Bar" },
+  { icon: Trophy, title: "Quadras" },
+  { icon: Footprints, title: "Pista de Cooper" },
+  { icon: Dog, title: "Espaço Pet" },
+  { icon: Baby, title: "Playground" },
+  { icon: ToyBrick, title: "Espaço Kids" },
+  { icon: PartyPopper, title: "Salão de Festas" },
+  { icon: ChefHat, title: "Espaço Gourmet" },
+  { icon: WashingMachine, title: "Lavanderia" },
+  { icon: Sun, title: "Outdoor Training" },
+  { icon: Car, title: "Car Wash" },
 ];
 
 const plans = [
