@@ -1,11 +1,12 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { useState } from "react";
 import {
-  MapPin, Shield, Trees, Leaf, Sparkles, Wifi,
+  MapPin, Shield, Trees, Leaf, Sparkles, Wine,
   Bed, Bath, Car, Wind, ChefHat, ArrowUpDown,
-  Phone, Instagram, Facebook,
+  Phone, Instagram, Facebook, MessageCircle,
   Waves, Dumbbell, Utensils, Baby, PartyPopper, Trophy,
-  Wine, Briefcase, Plug, ArrowRight,
+  Briefcase, Footprints, Dog, WashingMachine, Sun, ToyBrick,
+  ArrowRight,
 } from "lucide-react";
 
 import heroTower from "@/assets/hero-tower.png.asset.json";
@@ -23,6 +24,8 @@ import galKids from "@/assets/gallery/kids.jpeg.asset.json";
 import galCarwash from "@/assets/gallery/carwash.png.asset.json";
 import torresLogo from "@/assets/logos/torres.png.asset.json";
 import aliancaLogo from "@/assets/logos/alianca.png.asset.json";
+import aliancaLogoV2 from "@/assets/logos/alianca-v2.png.asset.json";
+import mcmvLogo from "@/assets/logos/mcmv.jpeg.asset.json";
 
 import { WhatsAppButton, whatsappUrl } from "@/components/WhatsAppButton";
 import { Lightbox } from "@/components/Lightbox";
