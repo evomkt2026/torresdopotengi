@@ -510,13 +510,43 @@ function LandingPage() {
         </div>
       </section>
 
+      {/* MCMV */}
+      <section className="bg-primary text-primary-foreground py-20">
+        <div className="mx-auto max-w-6xl px-6 md:px-10 grid gap-10 md:grid-cols-2 items-center">
+          <div>
+            <p className="text-xs tracking-[0.28em] uppercase text-gold mb-5">Condições Facilitadas</p>
+            <h2 className="text-3xl md:text-4xl text-cream text-balance">Financiamento pelo Minha Casa Minha Vida</h2>
+            <p className="mt-5 text-primary-foreground/70 leading-relaxed">
+              Entrada parcelada, uso do FGTS e taxas reduzidas. Realize o sonho do seu apartamento no endereço mais desejado da Zona Norte de Natal.
+            </p>
+            <a
+              href={whatsappUrl()}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="mt-8 inline-flex items-center gap-2 bg-[#25D366] text-white px-7 py-4 text-xs tracking-[0.25em] uppercase hover:bg-[#1ebe57] transition"
+            >
+              <MessageCircle className="h-4 w-4" strokeWidth={2} />
+              Simular Financiamento
+            </a>
+          </div>
+          <div className="flex justify-center md:justify-end">
+            <img
+              src={mcmvLogo.url}
+              alt="Minha Casa Minha Vida"
+              className="h-28 md:h-36 w-auto"
+              style={{ filter: "brightness(0) invert(1)" }}
+            />
+          </div>
+        </div>
+      </section>
+
       {/* FOOTER */}
-      <footer className="bg-primary text-primary-foreground/80">
+      <footer className="bg-primary text-primary-foreground/80 border-t border-primary-foreground/10">
         <div className="mx-auto max-w-7xl px-6 md:px-10 py-16">
           <div className="grid gap-12 md:grid-cols-4">
             <div className="md:col-span-2">
               <div className="bg-cream/95 inline-block p-5 rounded-sm">
-                <img src={aliancaLogo.url} alt="Aliança Imobiliária" className="h-24 w-auto" />
+                <img src={aliancaLogoV2.url} alt="Aliança Imobiliária" className="h-28 w-auto" />
               </div>
               <p className="mt-6 text-sm max-w-sm leading-relaxed">
                 Aliança Imobiliária — corretora oficial do Residencial Torres do Potengi na Zona Norte de Natal.
@@ -525,10 +555,10 @@ function LandingPage() {
             <div>
               <div className="text-xs tracking-[0.25em] uppercase text-gold mb-4">Contato</div>
               <ul className="space-y-2 text-sm">
-                <li><a href="tel:+558432343333" className="hover:text-cream transition">(84) 3234-3333</a></li>
+                <li><a href={whatsappUrl()} target="_blank" rel="noopener noreferrer" className="hover:text-cream transition">(84) 3234-3333</a></li>
                 <li><a href={whatsappUrl()} target="_blank" rel="noopener noreferrer" className="hover:text-cream transition">WhatsApp</a></li>
-                <li>Av. Amintas Barros, 3054</li>
-                <li>Lagoa Nova — Natal/RN</li>
+                <li>R. Limoeiro do Norte</li>
+                <li>Potengi — Natal/RN</li>
               </ul>
             </div>
             <div>
