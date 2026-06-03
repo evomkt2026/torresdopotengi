@@ -25,7 +25,8 @@ import galCarwash from "@/assets/gallery/carwash.png.asset.json";
 import torresLogo from "@/assets/logos/torres.png.asset.json";
 
 import aliancaLogoV2 from "@/assets/logos/alianca-v2.png.asset.json";
-import mcmvLogo from "@/assets/logos/mcmv.jpeg.asset.json";
+import aliancaWhite from "@/assets/logos/alianca-white.png.asset.json";
+import mcmvLogo from "@/assets/logos/mcmv.webp.asset.json";
 
 import { WhatsAppButton, whatsappUrl } from "@/components/WhatsAppButton";
 import { Lightbox } from "@/components/Lightbox";
@@ -172,7 +173,7 @@ function LandingPage() {
       <header className="fixed top-0 left-0 right-0 z-40 backdrop-blur-md bg-background/70 border-b border-border/60">
         <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-4 md:px-10">
           <a href="#top" className="flex items-center">
-            <img src={torresLogo.url} alt="Residencial Torres do Potengi" className="h-16 md:h-20 w-auto" />
+            <img src={torresLogo.url} alt="Residencial Torres do Potengi" className="h-20 md:h-28 w-auto" />
           </a>
           <nav className="hidden md:flex items-center gap-9 text-sm tracking-wide text-muted-foreground">
             <a href="#sobre" className="hover:text-foreground transition">Sobre</a>
@@ -200,7 +201,11 @@ function LandingPage() {
         <div className="relative z-10 flex h-full items-end">
           <div className="mx-auto w-full max-w-7xl px-6 pb-20 md:px-10 md:pb-28">
             <div className="max-w-3xl text-white fade-up">
-
+              <img
+                src={torresLogo.url}
+                alt="Residencial Torres do Potengi"
+                className="mb-8 h-32 md:h-48 lg:h-56 w-auto drop-shadow-2xl"
+              />
               <h1 className="text-balance text-5xl leading-[1.05] md:text-7xl lg:text-[5.5rem]">
                 A melhor vista <em className="not-italic font-light italic text-cream">do Potengi</em>.
               </h1>
@@ -533,8 +538,7 @@ function LandingPage() {
             <img
               src={mcmvLogo.url}
               alt="Minha Casa Minha Vida"
-              className="h-28 md:h-36 w-auto"
-              style={{ filter: "brightness(0) invert(1)" }}
+              className="h-32 md:h-44 w-auto"
             />
           </div>
         </div>
@@ -545,8 +549,12 @@ function LandingPage() {
         <div className="mx-auto max-w-7xl px-6 md:px-10 py-16">
           <div className="grid gap-12 md:grid-cols-4">
             <div className="md:col-span-2">
-              <div className="bg-cream/95 inline-block p-5 rounded-sm">
-                <img src={aliancaLogoV2.url} alt="Aliança Imobiliária" className="h-28 w-auto" />
+              <div className="flex items-center gap-4">
+                <img src={aliancaWhite.url} alt="Aliança Imobiliária" className="h-24 md:h-28 w-auto" />
+                <div className="text-cream">
+                  <div className="text-2xl md:text-3xl font-light tracking-wide">Aliança</div>
+                  <div className="text-[0.7rem] tracking-[0.3em] uppercase text-cream/80">Imobiliária</div>
+                </div>
               </div>
               <p className="mt-6 text-sm max-w-sm leading-relaxed">
                 Aliança Imobiliária — corretora oficial do Residencial Torres do Potengi na Zona Norte de Natal.
