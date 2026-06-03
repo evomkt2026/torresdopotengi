@@ -228,7 +228,7 @@ function LandingPage() {
                 {[
                   { v: "18", l: "Pavimentos" },
                   { v: "41–65m²", l: "Área privativa" },
-                  { v: "10+", l: "Itens de lazer" },
+                  { v: "15+", l: "Itens de lazer" },
                 ].map((s) => (
                   <div key={s.l}>
                     <div className="text-2xl md:text-3xl font-light">{s.v}</div>
