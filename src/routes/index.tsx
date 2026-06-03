@@ -25,7 +25,8 @@ import galCarwash from "@/assets/gallery/carwash.png.asset.json";
 import torresLogo from "@/assets/logos/torres.png.asset.json";
 
 import aliancaLogoV2 from "@/assets/logos/alianca-v2.png.asset.json";
-import mcmvLogo from "@/assets/logos/mcmv.jpeg.asset.json";
+import aliancaWhite from "@/assets/logos/alianca-white.png.asset.json";
+import mcmvLogo from "@/assets/logos/mcmv.webp.asset.json";
 
 import { WhatsAppButton, whatsappUrl } from "@/components/WhatsAppButton";
 import { Lightbox } from "@/components/Lightbox";
