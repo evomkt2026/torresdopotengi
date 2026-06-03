@@ -1,11 +1,12 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { useState } from "react";
 import {
-  MapPin, Shield, Trees, Leaf, Sparkles, Wifi,
+  MapPin, Shield, Trees, Leaf, Sparkles, Wine,
   Bed, Bath, Car, Wind, ChefHat, ArrowUpDown,
-  Phone, Instagram, Facebook,
+  Phone, Instagram, Facebook, MessageCircle,
   Waves, Dumbbell, Utensils, Baby, PartyPopper, Trophy,
-  Wine, Briefcase, Plug, ArrowRight,
+  Briefcase, Footprints, Dog, WashingMachine, Sun, ToyBrick,
+  ArrowRight,
 } from "lucide-react";
 
 import heroTower from "@/assets/hero-tower.png.asset.json";
@@ -22,7 +23,9 @@ import galParty from "@/assets/gallery/party.jpeg.asset.json";
 import galKids from "@/assets/gallery/kids.jpeg.asset.json";
 import galCarwash from "@/assets/gallery/carwash.png.asset.json";
 import torresLogo from "@/assets/logos/torres.png.asset.json";
-import aliancaLogo from "@/assets/logos/alianca.png.asset.json";
+
+import aliancaLogoV2 from "@/assets/logos/alianca-v2.png.asset.json";
+import mcmvLogo from "@/assets/logos/mcmv.jpeg.asset.json";
 
 import { WhatsAppButton, whatsappUrl } from "@/components/WhatsAppButton";
 import { Lightbox } from "@/components/Lightbox";
@@ -63,10 +66,10 @@ export const Route = createFileRoute("/")({
 const differentials = [
   { icon: MapPin, title: "Localização Privilegiada", desc: "Entre as principais avenidas do Panatis, com fácil acesso a toda Natal." },
   { icon: Shield, title: "Segurança 24h", desc: "Portaria blindada, controle de acesso biométrico e monitoramento integral." },
-  { icon: Trees, title: "Lazer Completo", desc: "Verdadeiro condomínio clube com mais de 10 itens equipados." },
+  { icon: Trees, title: "Lazer Completo", desc: "Verdadeiro condomínio clube com mais de 15 itens equipados." },
   { icon: Leaf, title: "Sustentabilidade", desc: "Reuso de água, painéis solares e estação para veículos elétricos." },
   { icon: Sparkles, title: "Acabamentos Premium", desc: "Materiais selecionados, design contemporâneo e atemporal." },
-  { icon: Wifi, title: "Tecnologia & Conforto", desc: "Smart home ready, fibra ótica e infraestrutura de ponta." },
+  { icon: Wine, title: "Rooftop Exclusivo", desc: "Wine Rooftop em cada torre, com vista para o rio e o mar." },
 ];
 
 const specs = [
@@ -79,15 +82,21 @@ const specs = [
 ];
 
 const amenities = [
-  { icon: Waves, title: "Piscina Adulto e Infantil" },
-  { icon: Dumbbell, title: "Academia Equipada" },
-  { icon: Utensils, title: "Espaço Gourmet" },
-  { icon: Baby, title: "Playground" },
-  { icon: PartyPopper, title: "Salão de Festas" },
-  { icon: Trophy, title: "Quadra Poliesportiva" },
-  { icon: Wine, title: "Wine Rooftop" },
+  { icon: Waves, title: "Piscina" },
+  { icon: Dumbbell, title: "Academia" },
   { icon: Briefcase, title: "Coworking" },
-  { icon: Plug, title: "Carregamento Elétrico" },
+  { icon: Wine, title: "Wine Bar" },
+  { icon: Utensils, title: "Sports Bar" },
+  { icon: Trophy, title: "Quadras" },
+  { icon: Footprints, title: "Pista de Cooper" },
+  { icon: Dog, title: "Espaço Pet" },
+  { icon: Baby, title: "Playground" },
+  { icon: ToyBrick, title: "Espaço Kids" },
+  { icon: PartyPopper, title: "Salão de Festas" },
+  { icon: ChefHat, title: "Espaço Gourmet" },
+  { icon: WashingMachine, title: "Lavanderia" },
+  { icon: Sun, title: "Outdoor Training" },
+  { icon: Car, title: "Car Wash" },
 ];
 
 const plans = [
@@ -163,7 +172,7 @@ function LandingPage() {
       <header className="fixed top-0 left-0 right-0 z-40 backdrop-blur-md bg-background/70 border-b border-border/60">
         <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-4 md:px-10">
           <a href="#top" className="flex items-center">
-            <img src={torresLogo.url} alt="Residencial Torres do Potengi" className="h-12 md:h-14 w-auto" />
+            <img src={torresLogo.url} alt="Residencial Torres do Potengi" className="h-16 md:h-20 w-auto" />
           </a>
           <nav className="hidden md:flex items-center gap-9 text-sm tracking-wide text-muted-foreground">
             <a href="#sobre" className="hover:text-foreground transition">Sobre</a>
@@ -191,7 +200,7 @@ function LandingPage() {
         <div className="relative z-10 flex h-full items-end">
           <div className="mx-auto w-full max-w-7xl px-6 pb-20 md:px-10 md:pb-28">
             <div className="max-w-3xl text-white fade-up">
-              <p className="eyebrow text-white/80 mb-5">Zona Norte de Natal — RN</p>
+
               <h1 className="text-balance text-5xl leading-[1.05] md:text-7xl lg:text-[5.5rem]">
                 A melhor vista <em className="not-italic font-light italic text-cream">do Potengi</em>.
               </h1>
@@ -219,7 +228,7 @@ function LandingPage() {
                 {[
                   { v: "18", l: "Pavimentos" },
                   { v: "41–65m²", l: "Área privativa" },
-                  { v: "10+", l: "Itens de lazer" },
+                  { v: "15+", l: "Itens de lazer" },
                 ].map((s) => (
                   <div key={s.l}>
                     <div className="text-2xl md:text-3xl font-light">{s.v}</div>
@@ -406,7 +415,7 @@ function LandingPage() {
               <p className="eyebrow mb-5">Localização</p>
               <h2 className="text-4xl md:text-5xl text-balance">No coração do Panatis.</h2>
               <p className="mt-6 text-muted-foreground leading-relaxed">
-                Av. Dr. João Medeiros Filho, Panatis — Natal, RN. Conectado às principais vias da cidade.
+                R. Limoeiro do Norte — Potengi, Natal/RN, 59108-230. Conectado às principais vias da cidade.
               </p>
               <ul className="mt-8 space-y-3">
                 {locationPoints.map((p) => (
@@ -421,7 +430,7 @@ function LandingPage() {
               <div className="aspect-[4/3] w-full overflow-hidden shadow-card border border-border">
                 <iframe
                   title="Mapa Torres do Potengi"
-                  src="https://www.google.com/maps?q=Av.+Amintas+Barros,+3054,+Lagoa+Nova,+Natal,+RN&output=embed"
+                  src="https://www.google.com/maps?q=R.+Limoeiro+do+Norte,+Potengi,+Natal,+RN,+59108-230&output=embed"
                   className="h-full w-full"
                   loading="lazy"
                   referrerPolicy="no-referrer-when-downgrade"
@@ -446,27 +455,52 @@ function LandingPage() {
                 Nossa equipe entrará em contato com tabela atualizada, plantas, vídeo do empreendimento e condições especiais de lançamento.
               </p>
               <div className="mt-10 space-y-4 text-sm">
-                <a href="tel:+558432343333" className="flex items-center gap-3 hover:text-bronze transition">
+                <a href={whatsappUrl()} target="_blank" rel="noopener noreferrer" className="flex items-center gap-3 hover:text-bronze transition">
                   <Phone className="h-4 w-4 text-bronze" strokeWidth={1.6} />
                   (84) 3234-3333
                 </a>
                 <a href={whatsappUrl()} target="_blank" rel="noopener noreferrer" className="flex items-center gap-3 hover:text-bronze transition">
-                  <Phone className="h-4 w-4 text-bronze" strokeWidth={1.6} />
-                  WhatsApp
+                  <MessageCircle className="h-4 w-4 text-bronze" strokeWidth={1.6} />
+                  WhatsApp — Atendimento imediato
+                </a>
+                <a href="https://www.instagram.com/aliancaimob" target="_blank" rel="noopener noreferrer" className="flex items-center gap-3 hover:text-bronze transition">
+                  <Instagram className="h-4 w-4 text-bronze" strokeWidth={1.6} />
+                  @aliancaimob
                 </a>
                 <div className="flex items-start gap-3">
                   <MapPin className="h-4 w-4 text-bronze mt-0.5" strokeWidth={1.6} />
-                  Av. Amintas Barros, 3054 — Lagoa Nova, Natal/RN
+                  R. Limoeiro do Norte — Potengi, Natal/RN, 59108-230
                 </div>
                 <div className="flex items-start gap-3 text-muted-foreground">
                   <Shield className="h-4 w-4 text-bronze mt-0.5" strokeWidth={1.6} />
                   CRECI: 1621-J — 17ª Região
                 </div>
               </div>
-              <div className="mt-10 pt-8 border-t border-border">
-                <p className="text-[0.65rem] tracking-[0.3em] uppercase text-muted-foreground mb-4">Corretora responsável</p>
-                <img src={aliancaLogo.url} alt="Aliança Imobiliária" className="h-20 w-auto" />
+              <div className="mt-8 flex flex-wrap gap-3">
+                <a
+                  href={whatsappUrl()}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-2 bg-[#25D366] text-white px-6 py-3 text-xs tracking-[0.2em] uppercase hover:bg-[#1ebe57] transition"
+                >
+                  <MessageCircle className="h-4 w-4" strokeWidth={2} />
+                  Falar no WhatsApp
+                </a>
+                <a
+                  href={whatsappUrl()}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-2 border border-primary text-primary px-6 py-3 text-xs tracking-[0.2em] uppercase hover:bg-primary hover:text-primary-foreground transition"
+                >
+                  <Phone className="h-4 w-4" strokeWidth={1.8} />
+                  Solicitar Ligação
+                </a>
               </div>
+              <div className="mt-10 pt-8 border-t border-border">
+                <p className="text-[0.65rem] tracking-[0.3em] uppercase text-muted-foreground mb-4">Vendas</p>
+                <img src={aliancaLogoV2.url} alt="Aliança Imobiliária" className="h-28 md:h-32 w-auto" />
+              </div>
+
 
             </div>
             <div className="bg-card p-8 md:p-10 shadow-card border border-border">
@@ -476,13 +510,43 @@ function LandingPage() {
         </div>
       </section>
 
+      {/* MCMV */}
+      <section className="bg-primary text-primary-foreground py-20">
+        <div className="mx-auto max-w-6xl px-6 md:px-10 grid gap-10 md:grid-cols-2 items-center">
+          <div>
+            <p className="text-xs tracking-[0.28em] uppercase text-gold mb-5">Condições Facilitadas</p>
+            <h2 className="text-3xl md:text-4xl text-cream text-balance">Financiamento pelo Minha Casa Minha Vida</h2>
+            <p className="mt-5 text-primary-foreground/70 leading-relaxed">
+              Entrada parcelada, uso do FGTS e taxas reduzidas. Realize o sonho do seu apartamento no endereço mais desejado da Zona Norte de Natal.
+            </p>
+            <a
+              href={whatsappUrl()}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="mt-8 inline-flex items-center gap-2 bg-[#25D366] text-white px-7 py-4 text-xs tracking-[0.25em] uppercase hover:bg-[#1ebe57] transition"
+            >
+              <MessageCircle className="h-4 w-4" strokeWidth={2} />
+              Simular Financiamento
+            </a>
+          </div>
+          <div className="flex justify-center md:justify-end">
+            <img
+              src={mcmvLogo.url}
+              alt="Minha Casa Minha Vida"
+              className="h-28 md:h-36 w-auto"
+              style={{ filter: "brightness(0) invert(1)" }}
+            />
+          </div>
+        </div>
+      </section>
+
       {/* FOOTER */}
-      <footer className="bg-primary text-primary-foreground/80">
+      <footer className="bg-primary text-primary-foreground/80 border-t border-primary-foreground/10">
         <div className="mx-auto max-w-7xl px-6 md:px-10 py-16">
           <div className="grid gap-12 md:grid-cols-4">
             <div className="md:col-span-2">
               <div className="bg-cream/95 inline-block p-5 rounded-sm">
-                <img src={aliancaLogo.url} alt="Aliança Imobiliária" className="h-24 w-auto" />
+                <img src={aliancaLogoV2.url} alt="Aliança Imobiliária" className="h-28 w-auto" />
               </div>
               <p className="mt-6 text-sm max-w-sm leading-relaxed">
                 Aliança Imobiliária — corretora oficial do Residencial Torres do Potengi na Zona Norte de Natal.
@@ -491,10 +555,10 @@ function LandingPage() {
             <div>
               <div className="text-xs tracking-[0.25em] uppercase text-gold mb-4">Contato</div>
               <ul className="space-y-2 text-sm">
-                <li><a href="tel:+558432343333" className="hover:text-cream transition">(84) 3234-3333</a></li>
+                <li><a href={whatsappUrl()} target="_blank" rel="noopener noreferrer" className="hover:text-cream transition">(84) 3234-3333</a></li>
                 <li><a href={whatsappUrl()} target="_blank" rel="noopener noreferrer" className="hover:text-cream transition">WhatsApp</a></li>
-                <li>Av. Amintas Barros, 3054</li>
-                <li>Lagoa Nova — Natal/RN</li>
+                <li>R. Limoeiro do Norte</li>
+                <li>Potengi — Natal/RN</li>
               </ul>
             </div>
             <div>
