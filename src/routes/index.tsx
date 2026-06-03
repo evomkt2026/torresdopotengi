@@ -23,7 +23,7 @@ import galParty from "@/assets/gallery/party.jpeg.asset.json";
 import galKids from "@/assets/gallery/kids.jpeg.asset.json";
 import galCarwash from "@/assets/gallery/carwash.png.asset.json";
 import torresLogo from "@/assets/logos/torres.png.asset.json";
-import aliancaLogo from "@/assets/logos/alianca.png.asset.json";
+
 import aliancaLogoV2 from "@/assets/logos/alianca-v2.png.asset.json";
 import mcmvLogo from "@/assets/logos/mcmv.jpeg.asset.json";
 
