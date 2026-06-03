@@ -538,8 +538,7 @@ function LandingPage() {
             <img
               src={mcmvLogo.url}
               alt="Minha Casa Minha Vida"
-              className="h-28 md:h-36 w-auto"
-              style={{ filter: "brightness(0) invert(1)" }}
+              className="h-32 md:h-44 w-auto"
             />
           </div>
         </div>
