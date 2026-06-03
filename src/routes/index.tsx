@@ -455,27 +455,52 @@ function LandingPage() {
                 Nossa equipe entrará em contato com tabela atualizada, plantas, vídeo do empreendimento e condições especiais de lançamento.
               </p>
               <div className="mt-10 space-y-4 text-sm">
-                <a href="tel:+558432343333" className="flex items-center gap-3 hover:text-bronze transition">
+                <a href={whatsappUrl()} target="_blank" rel="noopener noreferrer" className="flex items-center gap-3 hover:text-bronze transition">
                   <Phone className="h-4 w-4 text-bronze" strokeWidth={1.6} />
                   (84) 3234-3333
                 </a>
                 <a href={whatsappUrl()} target="_blank" rel="noopener noreferrer" className="flex items-center gap-3 hover:text-bronze transition">
-                  <Phone className="h-4 w-4 text-bronze" strokeWidth={1.6} />
-                  WhatsApp
+                  <MessageCircle className="h-4 w-4 text-bronze" strokeWidth={1.6} />
+                  WhatsApp — Atendimento imediato
+                </a>
+                <a href="https://www.instagram.com/aliancaimob" target="_blank" rel="noopener noreferrer" className="flex items-center gap-3 hover:text-bronze transition">
+                  <Instagram className="h-4 w-4 text-bronze" strokeWidth={1.6} />
+                  @aliancaimob
                 </a>
                 <div className="flex items-start gap-3">
                   <MapPin className="h-4 w-4 text-bronze mt-0.5" strokeWidth={1.6} />
-                  Av. Amintas Barros, 3054 — Lagoa Nova, Natal/RN
+                  R. Limoeiro do Norte — Potengi, Natal/RN, 59108-230
                 </div>
                 <div className="flex items-start gap-3 text-muted-foreground">
                   <Shield className="h-4 w-4 text-bronze mt-0.5" strokeWidth={1.6} />
                   CRECI: 1621-J — 17ª Região
                 </div>
               </div>
-              <div className="mt-10 pt-8 border-t border-border">
-                <p className="text-[0.65rem] tracking-[0.3em] uppercase text-muted-foreground mb-4">Corretora responsável</p>
-                <img src={aliancaLogo.url} alt="Aliança Imobiliária" className="h-20 w-auto" />
+              <div className="mt-8 flex flex-wrap gap-3">
+                <a
+                  href={whatsappUrl()}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-2 bg-[#25D366] text-white px-6 py-3 text-xs tracking-[0.2em] uppercase hover:bg-[#1ebe57] transition"
+                >
+                  <MessageCircle className="h-4 w-4" strokeWidth={2} />
+                  Falar no WhatsApp
+                </a>
+                <a
+                  href={whatsappUrl()}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-2 border border-primary text-primary px-6 py-3 text-xs tracking-[0.2em] uppercase hover:bg-primary hover:text-primary-foreground transition"
+                >
+                  <Phone className="h-4 w-4" strokeWidth={1.8} />
+                  Solicitar Ligação
+                </a>
               </div>
+              <div className="mt-10 pt-8 border-t border-border">
+                <p className="text-[0.65rem] tracking-[0.3em] uppercase text-muted-foreground mb-4">Vendas</p>
+                <img src={aliancaLogoV2.url} alt="Aliança Imobiliária" className="h-28 md:h-32 w-auto" />
+              </div>
+
 
             </div>
             <div className="bg-card p-8 md:p-10 shadow-card border border-border">
