@@ -549,8 +549,12 @@ function LandingPage() {
         <div className="mx-auto max-w-7xl px-6 md:px-10 py-16">
           <div className="grid gap-12 md:grid-cols-4">
             <div className="md:col-span-2">
-              <div className="bg-cream/95 inline-block p-5 rounded-sm">
-                <img src={aliancaLogoV2.url} alt="Aliança Imobiliária" className="h-28 w-auto" />
+              <div className="flex items-center gap-4">
+                <img src={aliancaWhite.url} alt="Aliança Imobiliária" className="h-24 md:h-28 w-auto" />
+                <div className="text-cream">
+                  <div className="text-2xl md:text-3xl font-light tracking-wide">Aliança</div>
+                  <div className="text-[0.7rem] tracking-[0.3em] uppercase text-cream/80">Imobiliária</div>
+                </div>
               </div>
               <p className="mt-6 text-sm max-w-sm leading-relaxed">
                 Aliança Imobiliária — corretora oficial do Residencial Torres do Potengi na Zona Norte de Natal.
