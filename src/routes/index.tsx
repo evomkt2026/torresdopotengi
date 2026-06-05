@@ -416,7 +416,7 @@ function LandingPage() {
               <p className="eyebrow mb-5">Localização</p>
               <h2 className="text-4xl md:text-5xl text-balance">No coração do Panatis.</h2>
               <p className="mt-6 text-muted-foreground leading-relaxed">
-                Av. Amintas Barros, 3054 - Lagoa Nova, Natal - RN, 59063-350. Conectado às principais vias da cidade.
+                R. Limoeiro do Norte - Potengi, Natal - RN, 59108-230. Conectado às principais vias da cidade.
               </p>
               <ul className="mt-8 space-y-3">
                 {locationPoints.map((p) => (
