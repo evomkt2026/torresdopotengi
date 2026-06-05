@@ -254,7 +254,7 @@ function LandingPage() {
             </div>
             <div className="md:col-span-7 space-y-6 text-muted-foreground leading-relaxed">
               <p className="text-lg text-foreground/90">
-                O Torres do Potengi nasce entre as principais avenidas do Panatis — Avenida Dr. João Medeiros Filho e Avenida Paulistana — para redefinir o conceito de morar bem na Zona Norte de Natal.
+                O Torres do Potengi nasce entre as principais avenidas do Panatis — Avenida Paulistana e a Avenida Maranguape — para redefinir o conceito de morar bem na Zona Norte de Natal.
               </p>
               <p>
                 Com 18 pavimentos, o empreendimento é o mais alto da região e entrega uma vista privilegiada do rio Potengi e do oceano. Apartamentos de 2 quartos, com plantas de 41 a 65m², projetados para quem busca qualidade de vida, segurança e potencial de valorização.
