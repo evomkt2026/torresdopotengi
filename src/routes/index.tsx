@@ -173,7 +173,7 @@ function LandingPage() {
       <header className="fixed top-0 left-0 right-0 z-40 backdrop-blur-md bg-background/70 border-b border-border/60">
         <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-4 md:px-10">
           <a href="#top" className="flex items-center">
-            <img src={torresLogo.url} alt="Residencial Torres do Potengi" className="h-20 md:h-28 w-auto" />
+            <img src={torresLogo.url} alt="Residencial Torres do Potengi" className="h-20 md:h-28 w-auto object-fill" />
           </a>
           <nav className="hidden md:flex items-center gap-9 text-sm tracking-wide text-muted-foreground">
             <a href="#sobre" className="hover:text-foreground transition">Sobre</a>
@@ -538,7 +538,7 @@ function LandingPage() {
             <img
               src={mcmvLogo.url}
               alt="Minha Casa Minha Vida"
-              className="h-32 md:h-44 w-auto"
+              className="h-32 md:h-44 w-auto object-scale-down"
             />
           </div>
         </div>
@@ -552,8 +552,8 @@ function LandingPage() {
               <div className="flex items-center gap-4">
                 <img src={aliancaWhite.url} alt="Aliança Imobiliária" className="h-24 md:h-28 w-auto" />
                 <div className="text-cream">
-                  <div className="text-2xl md:text-3xl font-light tracking-wide">Aliança</div>
-                  <div className="text-[0.7rem] tracking-[0.3em] uppercase text-cream/80">Imobiliária</div>
+                  <div className="text-2xl md:text-3xl font-light tracking-wide">{"\n"}</div>
+                  <div className="text-[0.7rem] tracking-[0.3em] uppercase text-cream/80">{"\n"}</div>
                 </div>
               </div>
               <p className="mt-6 text-sm max-w-sm leading-relaxed">
