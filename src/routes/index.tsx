@@ -174,7 +174,7 @@ function LandingPage() {
       <header className="fixed top-0 left-0 right-0 z-40 backdrop-blur-md bg-background/70 border-b border-border/60">
         <div className="mx-auto flex max-w-7xl items-center justify-between px-6 md:px-10 py-1">
           <a href="#top" className="flex items-center">
-            <img src={torresLogo.url} alt="Residencial Torres do Potengi" className="h-16 md:h-20 w-auto object-contain" />
+            <img src={torresLogo.url} alt="Residencial Torres do Potengi" className="h-24 md:h-28 w-auto object-contain" />
           </a>
           <nav className="hidden md:flex items-center gap-9 text-sm tracking-wide text-muted-foreground font-bold">
             <a href="#sobre" className="hover:text-foreground transition">Sobre</a>
@@ -254,7 +254,7 @@ function LandingPage() {
             </div>
             <div className="md:col-span-7 space-y-6 text-muted-foreground leading-relaxed">
               <p className="text-lg text-foreground/90">
-                O Torres do Potengi nasce entre as principais avenidas do Panatis — Avenida Dr. João Medeiros Filho e Avenida Paulistana — para redefinir o conceito de morar bem na Zona Norte de Natal.
+                O Torres do Potengi nasce entre as principais avenidas do Panatis — Avenida Paulistana e a Avenida Maranguape — para redefinir o conceito de morar bem na Zona Norte de Natal.
               </p>
               <p>
                 Com 18 pavimentos, o empreendimento é o mais alto da região e entrega uma vista privilegiada do rio Potengi e do oceano. Apartamentos de 2 quartos, com plantas de 41 a 65m², projetados para quem busca qualidade de vida, segurança e potencial de valorização.
@@ -416,7 +416,7 @@ function LandingPage() {
               <p className="eyebrow mb-5">Localização</p>
               <h2 className="text-4xl md:text-5xl text-balance">No coração do Panatis.</h2>
               <p className="mt-6 text-muted-foreground leading-relaxed">
-                Av. Amintas Barros, 3054 - Lagoa Nova, Natal - RN, 59063-350. Conectado às principais vias da cidade.
+                R. Limoeiro do Norte - Potengi, Natal - RN, 59108-230. Conectado às principais vias da cidade.
               </p>
               <ul className="mt-8 space-y-3">
                 {locationPoints.map((p) => (
