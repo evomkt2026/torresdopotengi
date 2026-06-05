@@ -24,7 +24,7 @@ import galKids from "@/assets/gallery/kids.jpeg.asset.json";
 import galCarwash from "@/assets/gallery/carwash.png.asset.json";
 import torresLogo from "@/assets/logos/torres.png.asset.json";
 
-import aliancaLogoV2 from "@/assets/logos/alianca-v2.png.asset.json";
+import aliancaLogoV2 from "@/assets/logos/alianca-nova.png.asset.json";
 import aliancaWhite from "@/assets/logos/alianca-white.png.asset.json";
 import mcmvLogo from "@/assets/logos/mcmv.webp.asset.json";
 import caixaLogo from "@/assets/logos/caixa-white.png.asset.json";
@@ -172,7 +172,7 @@ function LandingPage() {
     <div className="min-h-screen bg-background text-foreground antialiased">
       {/* NAV */}
       <header className="fixed top-0 left-0 right-0 z-40 backdrop-blur-md bg-background/70 border-b border-border/60">
-        <div className="mx-auto flex max-w-7xl items-center justify-between px-6 md:px-10 py-[16px]">
+        <div className="mx-auto flex max-w-7xl items-center justify-between px-6 md:px-10 py-1">
           <a href="#top" className="flex items-center">
             <img src={torresLogo.url} alt="Residencial Torres do Potengi" className="h-32 md:h-44 w-auto object-contain" />
           </a>
