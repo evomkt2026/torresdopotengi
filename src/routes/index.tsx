@@ -202,11 +202,6 @@ function LandingPage() {
         <div className="relative z-10 flex h-full items-end">
           <div className="mx-auto w-full max-w-7xl px-6 pb-20 md:px-10 md:pb-28">
             <div className="max-w-3xl text-white fade-up">
-              <img
-                src={torresLogo.url}
-                alt="Residencial Torres do Potengi"
-                className="mb-8 h-32 md:h-48 lg:h-56 w-auto drop-shadow-2xl"
-              />
               <h1 className="text-balance text-5xl leading-[1.05] md:text-7xl lg:text-[5.5rem]">
                 A melhor vista <em className="not-italic font-light italic text-cream">do Potengi</em>.
               </h1>
