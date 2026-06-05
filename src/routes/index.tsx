@@ -174,7 +174,7 @@ function LandingPage() {
       <header className="fixed top-0 left-0 right-0 z-40 backdrop-blur-md bg-background/70 border-b border-border/60">
         <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-4 md:px-10">
           <a href="#top" className="flex items-center">
-            <img src={torresLogo.url} alt="Residencial Torres do Potengi" className="h-20 md:h-28 w-auto object-fill" />
+            <img src={torresLogo.url} alt="Residencial Torres do Potengi" className="h-28 md:h-40 w-auto object-fill" />
           </a>
           <nav className="hidden md:flex items-center gap-9 text-sm tracking-wide text-muted-foreground font-bold">
             <a href="#sobre" className="hover:text-foreground transition">Sobre</a>
@@ -539,12 +539,12 @@ function LandingPage() {
             <img
               src={mcmvLogo.url}
               alt="Minha Casa Minha Vida"
-              className="h-20 md:h-28 w-auto object-scale-down"
+              className="h-14 md:h-20 w-auto object-scale-down"
             />
             <img
               src={caixaLogo.url}
               alt="Caixa Econômica Federal"
-              className="h-16 md:h-20 w-auto object-scale-down"
+              className="h-10 md:h-14 w-auto object-scale-down"
             />
           </div>
         </div>
@@ -571,8 +571,8 @@ function LandingPage() {
               <ul className="space-y-2 text-sm">
                 <li><a href={whatsappUrl()} target="_blank" rel="noopener noreferrer" className="hover:text-cream transition">(84) 3234-3333</a></li>
                 <li><a href={whatsappUrl()} target="_blank" rel="noopener noreferrer" className="hover:text-cream transition">WhatsApp</a></li>
-                <li>R. Limoeiro do Norte</li>
-                <li>Potengi — Natal/RN</li>
+                <li>Av. Amintas Barros, 3054</li>
+                <li>Lagoa Nova — Natal/RN, 59063-350</li>
               </ul>
             </div>
             <div>
