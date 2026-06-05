@@ -27,6 +27,7 @@ import torresLogo from "@/assets/logos/torres.png.asset.json";
 import aliancaLogoV2 from "@/assets/logos/alianca-v2.png.asset.json";
 import aliancaWhite from "@/assets/logos/alianca-white.png.asset.json";
 import mcmvLogo from "@/assets/logos/mcmv.webp.asset.json";
+import caixaLogo from "@/assets/logos/caixa-white.png.asset.json";
 
 import { WhatsAppButton, whatsappUrl } from "@/components/WhatsAppButton";
 import { Lightbox } from "@/components/Lightbox";
@@ -76,9 +77,9 @@ const differentials = [
 const specs = [
   { icon: Bed, label: "Quartos", value: "2" },
   { icon: Bath, label: "Banheiros", value: "2" },
-  { icon: Wind, label: "Varanda", value: "Gourmet" },
+  { icon: Wind, label: "Varanda", value: "Opção com" },
   { icon: Car, label: "Vagas", value: "1 a 2" },
-  { icon: ChefHat, label: "Área Gourmet", value: "Integrada" },
+  { icon: ChefHat, label: "Cozinha", value: "Integrada" },
   { icon: ArrowUpDown, label: "Elevadores", value: "2 por torre" },
 ];
 
@@ -175,7 +176,7 @@ function LandingPage() {
           <a href="#top" className="flex items-center">
             <img src={torresLogo.url} alt="Residencial Torres do Potengi" className="h-20 md:h-28 w-auto object-fill" />
           </a>
-          <nav className="hidden md:flex items-center gap-9 text-sm tracking-wide text-muted-foreground">
+          <nav className="hidden md:flex items-center gap-9 text-sm tracking-wide text-muted-foreground font-bold">
             <a href="#sobre" className="hover:text-foreground transition">Sobre</a>
             <a href="#diferenciais" className="hover:text-foreground transition">Diferenciais</a>
             <a href="#galeria" className="hover:text-foreground transition">Galeria</a>
@@ -396,7 +397,7 @@ function LandingPage() {
         <div className="mx-auto max-w-7xl px-6 md:px-10">
           <div className="mb-16 max-w-2xl">
             <p className="text-xs tracking-[0.28em] uppercase text-gold mb-5">Condomínio Clube</p>
-            <h2 className="text-4xl md:text-5xl text-balance text-cream">Lazer completo e equipado.</h2>
+            <h2 className="text-4xl md:text-5xl text-balance text-cream">Condomínio clube equipado.</h2>
             <p className="mt-6 text-primary-foreground/70 leading-relaxed">
               Mais de uma dezena de itens de lazer pensados para todas as idades, integrados a uma arquitetura paisagística sofisticada.
             </p>
@@ -420,7 +421,7 @@ function LandingPage() {
               <p className="eyebrow mb-5">Localização</p>
               <h2 className="text-4xl md:text-5xl text-balance">No coração do Panatis.</h2>
               <p className="mt-6 text-muted-foreground leading-relaxed">
-                R. Limoeiro do Norte — Potengi, Natal/RN, 59108-230. Conectado às principais vias da cidade.
+                Av. Amintas Barros, 3054 - Lagoa Nova, Natal - RN, 59063-350. Conectado às principais vias da cidade.
               </p>
               <ul className="mt-8 space-y-3">
                 {locationPoints.map((p) => (
@@ -474,7 +475,7 @@ function LandingPage() {
                 </a>
                 <div className="flex items-start gap-3">
                   <MapPin className="h-4 w-4 text-bronze mt-0.5" strokeWidth={1.6} />
-                  R. Limoeiro do Norte — Potengi, Natal/RN, 59108-230
+                  Av. Amintas Barros, 3054 - Lagoa Nova, Natal - RN, 59063-350
                 </div>
                 <div className="flex items-start gap-3 text-muted-foreground">
                   <Shield className="h-4 w-4 text-bronze mt-0.5" strokeWidth={1.6} />
@@ -534,11 +535,16 @@ function LandingPage() {
               Simular Financiamento
             </a>
           </div>
-          <div className="flex justify-center md:justify-end">
+          <div className="flex flex-wrap items-center justify-center md:justify-end gap-8 md:gap-10">
             <img
               src={mcmvLogo.url}
               alt="Minha Casa Minha Vida"
-              className="h-32 md:h-44 w-auto object-scale-down"
+              className="h-20 md:h-28 w-auto object-scale-down"
+            />
+            <img
+              src={caixaLogo.url}
+              alt="Caixa Econômica Federal"
+              className="h-16 md:h-20 w-auto object-scale-down"
             />
           </div>
         </div>
