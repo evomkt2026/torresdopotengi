@@ -27,6 +27,7 @@ import torresLogo from "@/assets/logos/torres.png.asset.json";
 import aliancaLogoV2 from "@/assets/logos/alianca-v2.png.asset.json";
 import aliancaWhite from "@/assets/logos/alianca-white.png.asset.json";
 import mcmvLogo from "@/assets/logos/mcmv.webp.asset.json";
+import caixaLogo from "@/assets/logos/caixa-white.png.asset.json";
 
 import { WhatsAppButton, whatsappUrl } from "@/components/WhatsAppButton";
 import { Lightbox } from "@/components/Lightbox";
@@ -534,11 +535,16 @@ function LandingPage() {
               Simular Financiamento
             </a>
           </div>
-          <div className="flex justify-center md:justify-end">
+          <div className="flex flex-wrap items-center justify-center md:justify-end gap-8 md:gap-10">
             <img
               src={mcmvLogo.url}
               alt="Minha Casa Minha Vida"
-              className="h-32 md:h-44 w-auto object-scale-down"
+              className="h-20 md:h-28 w-auto object-scale-down"
+            />
+            <img
+              src={caixaLogo.url}
+              alt="Caixa Econômica Federal"
+              className="h-16 md:h-20 w-auto object-scale-down"
             />
           </div>
         </div>
