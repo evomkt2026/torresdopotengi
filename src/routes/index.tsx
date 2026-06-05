@@ -24,7 +24,7 @@ import galKids from "@/assets/gallery/kids.jpeg.asset.json";
 import galCarwash from "@/assets/gallery/carwash.png.asset.json";
 import torresLogo from "@/assets/logos/torres.png.asset.json";
 
-import aliancaLogoV2 from "@/assets/logos/alianca-v2.png.asset.json";
+import aliancaLogoV2 from "@/assets/logos/alianca-nova.png.asset.json";
 import aliancaWhite from "@/assets/logos/alianca-white.png.asset.json";
 import mcmvLogo from "@/assets/logos/mcmv.webp.asset.json";
 import caixaLogo from "@/assets/logos/caixa-white.png.asset.json";
