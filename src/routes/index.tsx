@@ -26,6 +26,7 @@ import torresLogo from "@/assets/logos/torres.png.asset.json";
 
 import aliancaLogoV2 from "@/assets/logos/alianca-nova.png.asset.json";
 import aliancaWhite from "@/assets/logos/alianca-white.png.asset.json";
+import lsEngenharia from "@/assets/logos/ls-engenharia.png.asset.json";
 import mcmvLogo from "@/assets/logos/mcmv.webp.asset.json";
 import caixaLogo from "@/assets/logos/caixa-white.png.asset.json";
 
@@ -76,7 +77,7 @@ const differentials = [
 
 const specs = [
   { icon: Bed, label: "Quartos", value: "2" },
-  { icon: Bath, label: "Banheiros", value: "2" },
+  { icon: Bath, label: "Banheiros", value: "Opções com Suíte" },
   { icon: Wind, label: "Varanda", value: "Opção com" },
   { icon: Car, label: "Vagas", value: "1 a 2" },
   { icon: ChefHat, label: "Cozinha", value: "Integrada" },
@@ -394,7 +395,7 @@ function LandingPage() {
             <p className="text-xs tracking-[0.28em] uppercase text-gold mb-5">Condomínio Clube</p>
             <h2 className="text-4xl md:text-5xl text-balance text-cream">Condomínio clube equipado.</h2>
             <p className="mt-6 text-primary-foreground/70 leading-relaxed">
-              Mais de uma dezena de itens de lazer pensados para todas as idades, integrados a uma arquitetura paisagística sofisticada.
+              Diversos itens de lazer pensados para todas as idades, integrados a uma arquitetura paisagística sofisticada.
             </p>
           </div>
           <div className="grid grid-cols-2 gap-px bg-primary-foreground/10 md:grid-cols-3 lg:grid-cols-3">
@@ -499,7 +500,10 @@ function LandingPage() {
               </div>
               <div className="mt-10 pt-8 border-t border-border">
                 <p className="text-[0.65rem] tracking-[0.3em] uppercase text-muted-foreground mb-4">Vendas</p>
-                <img src={aliancaLogoV2.url} alt="Aliança Imobiliária" className="h-28 md:h-32 w-auto" />
+                <div className="flex items-center gap-6 flex-wrap">
+                  <img src={aliancaLogoV2.url} alt="Aliança Imobiliária" className="h-28 md:h-32 w-auto" />
+                  <img src={lsEngenharia.url} alt="LS Engenharia" className="h-28 md:h-32 w-auto" />
+                </div>
               </div>
 
 
