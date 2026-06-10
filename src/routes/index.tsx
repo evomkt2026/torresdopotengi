@@ -258,7 +258,7 @@ function LandingPage() {
                 O Torres do Potengi nasce entre as principais avenidas do Panatis — Avenida Paulistana e a Avenida Maranguape — para redefinir o conceito de morar bem na Zona Norte de Natal.
               </p>
               <p>
-                Com 18 pavimentos, o empreendimento é o mais alto da região e entrega uma vista privilegiada do rio Potengi e do oceano. Apartamentos de 2 quartos, com plantas de 41 a 65m², projetados para quem busca qualidade de vida, segurança e potencial de valorização.
+                Com 18 pavimentos, o empreendimento é o mais alto da região e entrega uma vista privilegiada do rio Potengi e do mar. Apartamentos de 2 quartos, com plantas de 41 a 65m², projetados para quem busca qualidade de vida, segurança e potencial de valorização.
               </p>
               <p>
                 Pensado como um verdadeiro condomínio clube, oferece lazer completo, entrada parcelada, possibilidade de uso do FGTS e financiamento pelo Minha Casa Minha Vida.
