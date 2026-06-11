@@ -3,7 +3,7 @@ import { useState } from "react";
 import {
   MapPin, Shield, Trees, Leaf, Sparkles, Wine,
   Bed, Bath, Car, Wind, ChefHat, ArrowUpDown,
-  Phone, Instagram, Facebook, MessageCircle,
+  Phone, Instagram, Facebook, Youtube, MessageCircle,
   Waves, Dumbbell, Utensils, Baby, PartyPopper, Trophy,
   Briefcase, Footprints, Dog, WashingMachine, Sun, ToyBrick,
   ArrowRight,
