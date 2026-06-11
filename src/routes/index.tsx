@@ -316,6 +316,29 @@ function LandingPage() {
         </div>
       </section>
 
+      {/* VIDEOS */}
+      <section id="videos" className="py-24 md:py-36">
+        <div className="mx-auto max-w-7xl px-6 md:px-10">
+          <div className="mb-16 max-w-2xl">
+            <p className="eyebrow mb-5">Vídeos</p>
+            <h2 className="text-4xl md:text-5xl text-balance">Veja o empreendimento em movimento.</h2>
+          </div>
+          <div className="grid gap-10 md:grid-cols-2">
+            <div className="flex flex-col">
+              <div className="relative w-full overflow-hidden bg-black shadow-card mx-auto" style={{ aspectRatio: "9 / 16", maxWidth: "420px" }}>
+                <iframe
+                  src="https://www.youtube.com/embed/dlG7r7nT6Go"
+                  title="Torres do Potengi"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  allowFullScreen
+                  className="absolute inset-0 h-full w-full"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* GALERIA */}
       <section id="galeria" className="bg-sand/60 py-24 md:py-36">
         <div className="mx-auto max-w-7xl px-6 md:px-10">
