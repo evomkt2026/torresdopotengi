@@ -1,4 +1,4 @@
-import { createFileRoute } from "@tanstack/react-router";
+import { createFileRoute, Link } from "@tanstack/react-router";
 import { useState } from "react";
 import {
   MapPin, Shield, Trees, Leaf, Sparkles, Wine,
@@ -182,6 +182,7 @@ function LandingPage() {
             <a href="#diferenciais" className="hover:text-foreground transition">Diferenciais</a>
             <a href="#galeria" className="hover:text-foreground transition">Galeria</a>
             <a href="#plantas" className="hover:text-foreground transition">Plantas</a>
+            <Link to="/videos" className="hover:text-foreground transition">Vídeos</Link>
             <a href="#localizacao" className="hover:text-foreground transition">Localização</a>
           </nav>
           <a href="#contato" className="hidden md:inline-flex items-center gap-2 bg-primary text-primary-foreground px-5 py-2.5 text-xs tracking-[0.2em] uppercase hover:bg-primary/90 transition">
