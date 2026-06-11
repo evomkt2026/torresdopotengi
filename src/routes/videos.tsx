@@ -21,6 +21,11 @@ const videos = [
     title: "Torres do Potengi",
     description: "Conheça o empreendimento mais alto da Zona Norte de Natal.",
   },
+  {
+    id: "IztnjXPmVz4",
+    title: "Torres do Potengi",
+    description: "Mais um olhar sobre o empreendimento.",
+  },
 ];
 
 function VideosPage() {
