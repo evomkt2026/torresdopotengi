@@ -3,7 +3,7 @@ import { useState } from "react";
 import {
   MapPin, Shield, Trees, Leaf, Sparkles, Wine,
   Bed, Bath, Car, Wind, ChefHat, ArrowUpDown,
-  Phone, Instagram, Facebook, MessageCircle,
+  Phone, Instagram, Facebook, Youtube, MessageCircle,
   Waves, Dumbbell, Utensils, Baby, PartyPopper, Trophy,
   Briefcase, Footprints, Dog, WashingMachine, Sun, ToyBrick,
   ArrowRight,
@@ -523,10 +523,15 @@ function LandingPage() {
                 </a>
               </div>
               <div className="mt-10 pt-8 border-t border-border">
-                <p className="text-[0.65rem] tracking-[0.3em] uppercase text-muted-foreground mb-4">Vendas</p>
-                <div className="flex items-center gap-6 flex-wrap">
-                  <img src={aliancaLogoV2.url} alt="Aliança Imobiliária" className="h-28 md:h-32 w-auto" />
-                  <img src={lsEngenharia.url} alt="LS Engenharia" className="h-28 md:h-32 w-auto" />
+                <div className="flex items-start gap-8 flex-wrap">
+                  <div>
+                    <p className="text-[0.65rem] tracking-[0.3em] uppercase text-muted-foreground mb-3">Vendas</p>
+                    <img src={aliancaLogoV2.url} alt="Aliança Imobiliária" className="h-28 md:h-32 w-auto" />
+                  </div>
+                  <div>
+                    <p className="text-[0.65rem] tracking-[0.3em] uppercase text-muted-foreground mb-3">Incorporação e Construção</p>
+                    <img src={lsEngenharia.url} alt="LS Engenharia" className="h-28 md:h-32 w-auto" />
+                  </div>
                 </div>
               </div>
 
@@ -603,6 +608,7 @@ function LandingPage() {
               <div className="flex gap-3">
                 <a href="https://www.instagram.com/aliancaimob" target="_blank" rel="noopener noreferrer" aria-label="Instagram" className="border border-primary-foreground/20 p-2.5 hover:bg-primary-foreground/10 transition"><Instagram className="h-4 w-4" strokeWidth={1.6} /></a>
                 <a href="https://www.facebook.com/alianca.imobiliaria" target="_blank" rel="noopener noreferrer" aria-label="Facebook" className="border border-primary-foreground/20 p-2.5 hover:bg-primary-foreground/10 transition"><Facebook className="h-4 w-4" strokeWidth={1.6} /></a>
+                <a href="https://www.youtube.com/@AliancaImobiliaria" target="_blank" rel="noopener noreferrer" aria-label="YouTube" className="border border-primary-foreground/20 p-2.5 hover:bg-primary-foreground/10 transition"><Youtube className="h-4 w-4" strokeWidth={1.6} /></a>
               </div>
               <div className="mt-6 text-xs text-primary-foreground/50">CRECI: 1621-J — 17ª Região</div>
             </div>
