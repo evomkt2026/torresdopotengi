@@ -523,10 +523,15 @@ function LandingPage() {
                 </a>
               </div>
               <div className="mt-10 pt-8 border-t border-border">
-                <p className="text-[0.65rem] tracking-[0.3em] uppercase text-muted-foreground mb-4">Vendas</p>
-                <div className="flex items-center gap-6 flex-wrap">
-                  <img src={aliancaLogoV2.url} alt="Aliança Imobiliária" className="h-28 md:h-32 w-auto" />
-                  <img src={lsEngenharia.url} alt="LS Engenharia" className="h-28 md:h-32 w-auto" />
+                <div className="flex items-start gap-8 flex-wrap">
+                  <div>
+                    <p className="text-[0.65rem] tracking-[0.3em] uppercase text-muted-foreground mb-3">Vendas</p>
+                    <img src={aliancaLogoV2.url} alt="Aliança Imobiliária" className="h-28 md:h-32 w-auto" />
+                  </div>
+                  <div>
+                    <p className="text-[0.65rem] tracking-[0.3em] uppercase text-muted-foreground mb-3">Incorporação e Construção</p>
+                    <img src={lsEngenharia.url} alt="LS Engenharia" className="h-28 md:h-32 w-auto" />
+                  </div>
                 </div>
               </div>
 
