@@ -477,8 +477,8 @@ function LandingPage() {
               <h2 className="text-4xl md:text-5xl text-balance">
                 Garanta a melhor unidade <em className="italic font-light">disponível</em>.
               </h2>
-              <p className="mt-6 text-muted-foreground leading-relaxed">
-                Nossa equipe entrará em contato com tabela atualizada, plantas, vídeo do empreendimento e condições especiais de lançamento.
+              <p className="mt-6 text-foreground leading-relaxed font-bold">
+                Nossa equipe entrará em contato para enviar mais informações e estudar a melhor condição de pagamento para você.
               </p>
               <div className="mt-10 space-y-4 text-sm">
                 <a href={whatsappUrl()} target="_blank" rel="noopener noreferrer" className="flex items-center gap-3 hover:text-bronze transition">
