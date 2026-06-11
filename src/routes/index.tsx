@@ -608,6 +608,7 @@ function LandingPage() {
               <div className="flex gap-3">
                 <a href="https://www.instagram.com/aliancaimob" target="_blank" rel="noopener noreferrer" aria-label="Instagram" className="border border-primary-foreground/20 p-2.5 hover:bg-primary-foreground/10 transition"><Instagram className="h-4 w-4" strokeWidth={1.6} /></a>
                 <a href="https://www.facebook.com/alianca.imobiliaria" target="_blank" rel="noopener noreferrer" aria-label="Facebook" className="border border-primary-foreground/20 p-2.5 hover:bg-primary-foreground/10 transition"><Facebook className="h-4 w-4" strokeWidth={1.6} /></a>
+                <a href="https://www.youtube.com/@AliancaImobiliaria" target="_blank" rel="noopener noreferrer" aria-label="YouTube" className="border border-primary-foreground/20 p-2.5 hover:bg-primary-foreground/10 transition"><Youtube className="h-4 w-4" strokeWidth={1.6} /></a>
               </div>
               <div className="mt-6 text-xs text-primary-foreground/50">CRECI: 1621-J — 17ª Região</div>
             </div>
