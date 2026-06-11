@@ -29,7 +29,7 @@ function VideosPage() {
       <header className="fixed top-0 left-0 right-0 z-40 backdrop-blur-md bg-background/70 border-b border-border/60">
         <div className="mx-auto flex max-w-7xl items-center justify-between px-6 md:px-10 py-1">
           <Link to="/" className="flex items-center">
-            <img src={torresLogo.url} alt="Residencial Torres do Potengi" className="h-24 md:h-28 w-auto object-contain" />
+            <img src={torresLogo.url} alt="Residencial Torres do Potengi" className="h-32 md:h-40 w-auto object-contain" />
           </Link>
           <nav className="hidden md:flex items-center gap-9 text-sm tracking-wide text-muted-foreground font-bold">
             <Link to="/" hash="sobre" className="hover:text-foreground transition">Sobre</Link>
