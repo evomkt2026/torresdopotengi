@@ -175,7 +175,7 @@ function LandingPage() {
       <header className="fixed top-0 left-0 right-0 z-40 backdrop-blur-md bg-background/70 border-b border-border/60">
         <div className="mx-auto flex max-w-7xl items-center justify-between px-6 md:px-10 py-1">
           <a href="#top" className="flex items-center">
-            <img src={torresLogo.url} alt="Residencial Torres do Potengi" className="h-40 md:h-48 w-auto object-contain" />
+            <img src={torresLogo.url} alt="Residencial Torres do Potengi" className="h-32 md:h-40 w-auto object-contain" />
           </a>
           <nav className="hidden md:flex items-center gap-9 text-sm tracking-wide text-muted-foreground font-bold">
             <a href="#sobre" className="hover:text-foreground transition">Sobre</a>
@@ -524,11 +524,11 @@ function LandingPage() {
               </div>
               <div className="mt-10 pt-8 border-t border-border">
                 <div className="flex items-start gap-8 flex-wrap">
-                  <div>
+                  <div className="flex flex-col items-center text-center">
                     <p className="text-[0.65rem] tracking-[0.3em] uppercase text-muted-foreground mb-3">Vendas</p>
                     <img src={aliancaLogoV2.url} alt="Aliança Imobiliária" className="h-28 md:h-32 w-auto" />
                   </div>
-                  <div>
+                  <div className="flex flex-col items-center text-center">
                     <p className="text-[0.65rem] tracking-[0.3em] uppercase text-muted-foreground mb-3">Incorporação e Construção</p>
                     <img src={lsEngenharia.url} alt="LS Engenharia" className="h-28 md:h-32 w-auto" />
                   </div>
