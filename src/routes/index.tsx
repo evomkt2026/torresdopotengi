@@ -441,7 +441,15 @@ function LandingPage() {
               <p className="eyebrow mb-5">Localização</p>
               <h2 className="text-4xl md:text-5xl text-balance">No coração do Panatis.</h2>
               <p className="mt-6 text-muted-foreground leading-relaxed">
-                R. Limoeiro do Norte - Potengi, Natal - RN, 59108-230. Conectado às principais vias da cidade.
+                <a
+                  href="https://www.google.com/maps/search/?api=1&query=Torres+do+Potengi+Residencial+R.+Limoeiro+do+Norte+Potengi+Natal+RN+59108-230"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="hover:text-foreground transition underline-offset-4 hover:underline"
+                >
+                  Torres do Potengi Residencial — R. Limoeiro do Norte, Potengi, Natal - RN, 59108-230
+                </a>
+                . Conectado às principais vias da cidade.
               </p>
               <ul className="mt-8 space-y-3">
                 {locationPoints.map((p) => (
