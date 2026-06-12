@@ -581,19 +581,9 @@ function LandingPage() {
       {/* FOOTER */}
       <footer className="bg-primary text-primary-foreground/80 border-t border-primary-foreground/10">
         <div className="mx-auto max-w-7xl px-6 md:px-10 py-16">
-          <div className="grid gap-12 md:grid-cols-4">
-            <div className="md:col-span-2">
-              <div className="flex items-center gap-4">
-                <img src={aliancaWhite.url} alt="Aliança Imobiliária" className="h-24 md:h-28 w-auto" />
-                <div className="text-cream">
-                  <div className="text-2xl md:text-3xl font-light tracking-wide">{"\n"}</div>
-                  <div className="text-[0.7rem] tracking-[0.3em] uppercase text-cream/80">{"\n"}</div>
-                </div>
-              </div>
-              <p className="mt-6 text-sm max-w-sm leading-relaxed">
-                Aliança Imobiliária — corretora oficial do Residencial Torres do Potengi na Zona Norte de Natal.
-              </p>
-            </div>
+          <div className="flex flex-col items-center text-center gap-10">
+            <img src={aliancaWhite.url} alt="Aliança Imobiliária" className="h-24 md:h-28 w-auto" />
+
             <div>
               <div className="text-xs tracking-[0.25em] uppercase text-gold mb-4">Contato</div>
               <ul className="space-y-2 text-sm">
@@ -603,9 +593,10 @@ function LandingPage() {
                 <li>Lagoa Nova — Natal/RN, 59063-350</li>
               </ul>
             </div>
+
             <div>
               <div className="text-xs tracking-[0.25em] uppercase text-gold mb-4">Redes</div>
-              <div className="flex gap-3">
+              <div className="flex justify-center gap-3">
                 <a href="https://www.instagram.com/aliancaimob" target="_blank" rel="noopener noreferrer" aria-label="Instagram" className="border border-primary-foreground/20 p-2.5 hover:bg-primary-foreground/10 transition"><Instagram className="h-4 w-4" strokeWidth={1.6} /></a>
                 <a href="https://www.facebook.com/alianca.imobiliaria" target="_blank" rel="noopener noreferrer" aria-label="Facebook" className="border border-primary-foreground/20 p-2.5 hover:bg-primary-foreground/10 transition"><Facebook className="h-4 w-4" strokeWidth={1.6} /></a>
                 <a href="https://www.youtube.com/@AliancaImobiliaria" target="_blank" rel="noopener noreferrer" aria-label="YouTube" className="border border-primary-foreground/20 p-2.5 hover:bg-primary-foreground/10 transition"><Youtube className="h-4 w-4" strokeWidth={1.6} /></a>
@@ -613,10 +604,12 @@ function LandingPage() {
               <div className="mt-6 text-xs text-primary-foreground/50">CRECI: 1621-J — 17ª Região</div>
             </div>
           </div>
-          <div className="mt-14 pt-8 border-t border-primary-foreground/10 flex flex-wrap items-center justify-between gap-4 text-xs text-primary-foreground/50">
+          <div className="mt-14 pt-8 border-t border-primary-foreground/10 flex flex-col items-center justify-center gap-2 text-xs text-primary-foreground/50 text-center">
             <div>© {new Date().getFullYear()} Aliança Imobiliária. Todos os direitos reservados.</div>
             <div>Imagens meramente ilustrativas.</div>
+            <div>Registro de Incorporação: R-349899</div>
           </div>
+
         </div>
       </footer>
 
