@@ -255,7 +255,7 @@ function LandingPage() {
               </h2>
             </div>
             <div className="md:col-span-7 space-y-6 text-muted-foreground leading-relaxed">
-              <p className="text-lg text-foreground/90">
+              <p>
                 O Torres do Potengi nasce entre as principais avenidas do Panatis — Avenida Paulistana e a Avenida Maranguape — para redefinir o conceito de morar bem na Zona Norte de Natal.
               </p>
               <p>
