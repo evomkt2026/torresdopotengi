@@ -78,7 +78,7 @@ const differentials = [
 const specs = [
   { icon: Bed, label: "Quartos", value: "2" },
   { icon: Bath, label: "\n", value: "Opções com Suíte" },
-  { icon: Wind, label: "Varanda", value: "Opção com (Planta COMFORT)" },
+  { icon: Wind, label: "(Confort)", value: "Opção com Varanda" },
   { icon: Car, label: "Vagas", value: "1 a 2" },
   { icon: ChefHat, label: "Cozinha", value: "Integrada" },
   { icon: ArrowUpDown, label: "Elevadores", value: "2 por torre" },
