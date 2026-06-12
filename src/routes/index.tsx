@@ -581,10 +581,10 @@ function LandingPage() {
       {/* FOOTER */}
       <footer className="bg-primary text-primary-foreground/80 border-t border-primary-foreground/10">
         <div className="mx-auto max-w-7xl px-6 md:px-10 py-16">
-          <div className="flex flex-col items-center text-center gap-10">
+          <div className="flex flex-col md:flex-row items-center justify-center md:items-start gap-12 md:gap-20">
             <img src={aliancaWhite.url} alt="Aliança Imobiliária" className="h-24 md:h-28 w-auto" />
 
-            <div>
+            <div className="text-center">
               <div className="text-xs tracking-[0.25em] uppercase text-gold mb-4">Contato</div>
               <ul className="space-y-2 text-sm">
                 <li><a href={whatsappUrl()} target="_blank" rel="noopener noreferrer" className="hover:text-cream transition">(84) 3234-3333</a></li>
@@ -594,7 +594,7 @@ function LandingPage() {
               </ul>
             </div>
 
-            <div>
+            <div className="text-center">
               <div className="text-xs tracking-[0.25em] uppercase text-gold mb-4">Redes</div>
               <div className="flex justify-center gap-3">
                 <a href="https://www.instagram.com/aliancaimob" target="_blank" rel="noopener noreferrer" aria-label="Instagram" className="border border-primary-foreground/20 p-2.5 hover:bg-primary-foreground/10 transition"><Instagram className="h-4 w-4" strokeWidth={1.6} /></a>
@@ -604,6 +604,7 @@ function LandingPage() {
               <div className="mt-6 text-xs text-primary-foreground/50">CRECI: 1621-J — 17ª Região</div>
             </div>
           </div>
+
           <div className="mt-14 pt-8 border-t border-primary-foreground/10 flex flex-col items-center justify-center gap-2 text-xs text-primary-foreground/50 text-center">
             <div>© {new Date().getFullYear()} Aliança Imobiliária. Todos os direitos reservados.</div>
             <div>Imagens meramente ilustrativas.</div>
