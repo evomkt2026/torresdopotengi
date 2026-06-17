@@ -72,7 +72,7 @@ const differentials = [
   { icon: Trees, title: "Lazer Completo", desc: "Verdadeiro condomínio clube com mais de 15 itens equipados." },
   { icon: Leaf, title: "Sustentabilidade", desc: "Reuso de água, painéis solares e estação para veículos elétricos." },
   { icon: Sparkles, title: "Acabamentos Premium", desc: "Materiais selecionados, design contemporâneo e atemporal." },
-  { icon: Wine, title: "Rooftop Exclusivo", desc: "Wine Rooftop em cada torre, com vista para o rio e o mar." },
+  { icon: Wine, title: "Rooftops Exclusivos", desc: "Wine Bar e Sports Bar, um em cada torre, ambos com vista para o rio e o mar." },
 ];
 
 const specs = [
