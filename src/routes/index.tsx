@@ -204,7 +204,7 @@ function LandingPage() {
         <div className="relative z-10 flex h-full items-end">
           <div className="mx-auto w-full max-w-7xl px-6 pb-20 md:px-10 md:pb-28">
             <div className="max-w-3xl text-white fade-up">
-              <h1 className="text-balance text-[2.5rem] sm:text-5xl leading-[1.05] md:text-7xl lg:text-[5.5rem]">
+              <h1 className="max-w-full pr-1 text-[2.15rem] leading-[1.16] tracking-normal sm:text-balance sm:text-5xl sm:leading-[1.08] md:text-7xl lg:text-[5.5rem]">
                 A melhor vista <em className="not-italic font-light italic text-cream">do Potengi</em>.
               </h1>
               <p className="mt-6 max-w-xl text-base md:text-lg text-white/85 font-light">
