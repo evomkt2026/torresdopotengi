@@ -9,26 +9,45 @@ import {
   ArrowRight,
 } from "lucide-react";
 
-import heroTower from "@/assets/hero-tower.png.asset.json";
-import planSmart from "@/assets/plans/smart.jpg.asset.json";
-import planLiving from "@/assets/plans/living.jpg.asset.json";
-import planComfort from "@/assets/plans/comfort.jpg.asset.json";
-import galAerial from "@/assets/gallery/aerial.jpeg.asset.json";
-import galFacade from "@/assets/gallery/facade.jpg.asset.json";
-import galRooftop from "@/assets/gallery/rooftop.jpg.asset.json";
-import galPoolDay from "@/assets/gallery/pool-day.jpg.asset.json";
-import galPoolSunset from "@/assets/gallery/pool-sunset.png.asset.json";
-import galGym from "@/assets/gallery/gym.jpg.asset.json";
-import galParty from "@/assets/gallery/party.jpeg.asset.json";
-import galKids from "@/assets/gallery/kids.jpeg.asset.json";
-import galCarwash from "@/assets/gallery/carwash.png.asset.json";
-import torresLogo from "@/assets/logos/torres.png.asset.json";
+import heroTowerSrc from "@/assets/media/hero-tower.png";
+const heroTower = { url: heroTowerSrc };
+import planSmartSrc from "@/assets/media/smart.jpg";
+const planSmart = { url: planSmartSrc };
+import planLivingSrc from "@/assets/media/living.jpg";
+const planLiving = { url: planLivingSrc };
+import planComfortSrc from "@/assets/media/comfort.jpg";
+const planComfort = { url: planComfortSrc };
+import galAerialSrc from "@/assets/media/aerial.jpeg";
+const galAerial = { url: galAerialSrc };
+import galFacadeSrc from "@/assets/media/facade.jpg";
+const galFacade = { url: galFacadeSrc };
+import galRooftopSrc from "@/assets/media/rooftop.jpg";
+const galRooftop = { url: galRooftopSrc };
+import galPoolDaySrc from "@/assets/media/pool-day.jpg";
+const galPoolDay = { url: galPoolDaySrc };
+import galPoolSunsetSrc from "@/assets/media/pool-sunset.png";
+const galPoolSunset = { url: galPoolSunsetSrc };
+import galGymSrc from "@/assets/media/gym.jpg";
+const galGym = { url: galGymSrc };
+import galPartySrc from "@/assets/media/party.jpeg";
+const galParty = { url: galPartySrc };
+import galKidsSrc from "@/assets/media/kids.jpeg";
+const galKids = { url: galKidsSrc };
+import galCarwashSrc from "@/assets/media/carwash.png";
+const galCarwash = { url: galCarwashSrc };
+import torresLogoSrc from "@/assets/media/torres.png";
+const torresLogo = { url: torresLogoSrc };
 
-import aliancaLogoV2 from "@/assets/logos/alianca-nova.png.asset.json";
-import aliancaWhite from "@/assets/logos/alianca-white.png.asset.json";
-import lsEngenharia from "@/assets/logos/ls-engenharia.png.asset.json";
-import mcmvLogo from "@/assets/logos/mcmv.webp.asset.json";
-import caixaLogo from "@/assets/logos/caixa-white.png.asset.json";
+import aliancaLogoV2Src from "@/assets/media/alianca-nova.png";
+const aliancaLogoV2 = { url: aliancaLogoV2Src };
+import aliancaWhiteSrc from "@/assets/media/alianca-white.png";
+const aliancaWhite = { url: aliancaWhiteSrc };
+import lsEngenhariaSrc from "@/assets/media/ls-engenharia.png";
+const lsEngenharia = { url: lsEngenhariaSrc };
+import mcmvLogoSrc from "@/assets/media/mcmv.webp";
+const mcmvLogo = { url: mcmvLogoSrc };
+import caixaLogoSrc from "@/assets/media/caixa-white.png";
+const caixaLogo = { url: caixaLogoSrc };
 
 import { WhatsAppButton, whatsappUrl } from "@/components/WhatsAppButton";
 import { Lightbox } from "@/components/Lightbox";
@@ -41,11 +60,12 @@ export const Route = createFileRoute("/")({
       { name: "description", content: "Empreendimento mais alto da Zona Norte de Natal. Apartamentos de 2 quartos, 41 a 65m², lazer completo, vista para o Potengi. Agende sua visita." },
       { property: "og:title", content: "Torres do Potengi — Alto Padrão em Natal" },
       { property: "og:description", content: "A melhor vista do Potengi. 18 pavimentos, lazer completo, financiamento MCMV." },
-      { property: "og:image", content: heroTower.url },
-      { property: "og:url", content: "/" },
-      { name: "twitter:image", content: heroTower.url },
+      { property: "og:image", content: `https://aliancaimobiliaria.com.br/torresdopotengi${heroTower.url.replace(/^\/torresdopotengi/, "")}` },
+      { property: "og:url", content: "https://aliancaimobiliaria.com.br/torresdopotengi/" },
+      { name: "twitter:image", content: `https://aliancaimobiliaria.com.br/torresdopotengi${heroTower.url.replace(/^\/torresdopotengi/, "")}` },
     ],
-    links: [{ rel: "canonical", href: "/" }],
+    links: [{ rel: "canonical", href: "https://aliancaimobiliaria.com.br/torresdopotengi/" }],
+
     scripts: [{
       type: "application/ld+json",
       children: JSON.stringify({
