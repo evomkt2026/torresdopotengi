@@ -1,0 +1,40 @@
+name: Gerar site para hospedagem
+
+on:
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Baixar projeto
+        uses: actions/checkout@v4
+
+      - name: Configurar Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Instalar dependencias
+        run: npm install
+
+      - name: Gerar site
+        run: npm run build
+
+      - name: Verificar arquivos
+        run: |
+          echo "Conteudo de dist/client:"
+          ls -la dist/client
+
+      - name: Preparar pacote
+        run: |
+          mkdir pacote-site
+          cp -R dist/client/. pacote-site/
+
+      - name: Disponibilizar site para download
+        uses: actions/upload-artifact@v4
+        with:
+          name: torres-do-potengi-site
+          path: pacote-site/
+          if-no-files-found: error
