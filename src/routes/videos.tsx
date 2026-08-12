@@ -11,7 +11,7 @@ export const Route = createFileRoute("/videos")({
       { property: "og:title", content: "Vídeos — Torres do Potengi" },
       { property: "og:description", content: "Assista aos vídeos do Residencial Torres do Potengi." },
     ],
-    links: [{ rel: "canonical", href: "/videos" }],
+    links: [{ rel: "canonical", href: "https://aliancaimobiliaria.com.br/torresdopotengi/videos/" }],
   }),
   component: VideosPage,
 });
