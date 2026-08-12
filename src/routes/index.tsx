@@ -60,11 +60,12 @@ export const Route = createFileRoute("/")({
       { name: "description", content: "Empreendimento mais alto da Zona Norte de Natal. Apartamentos de 2 quartos, 41 a 65m², lazer completo, vista para o Potengi. Agende sua visita." },
       { property: "og:title", content: "Torres do Potengi — Alto Padrão em Natal" },
       { property: "og:description", content: "A melhor vista do Potengi. 18 pavimentos, lazer completo, financiamento MCMV." },
-      { property: "og:image", content: heroTower.url },
-      { property: "og:url", content: "/" },
-      { name: "twitter:image", content: heroTower.url },
+      { property: "og:image", content: `https://aliancaimobiliaria.com.br/torresdopotengi${heroTower.url.replace(/^\/torresdopotengi/, "")}` },
+      { property: "og:url", content: "https://aliancaimobiliaria.com.br/torresdopotengi/" },
+      { name: "twitter:image", content: `https://aliancaimobiliaria.com.br/torresdopotengi${heroTower.url.replace(/^\/torresdopotengi/, "")}` },
     ],
-    links: [{ rel: "canonical", href: "/" }],
+    links: [{ rel: "canonical", href: "https://aliancaimobiliaria.com.br/torresdopotengi/" }],
+
     scripts: [{
       type: "application/ld+json",
       children: JSON.stringify({
