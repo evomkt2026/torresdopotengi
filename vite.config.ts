@@ -17,6 +17,5 @@ vite: {
       autoSubfolderIndex: true,
       crawlLinks: true,
     },
-    server: { entry: "server" },
   },
 });
