@@ -1,6 +1,7 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { ArrowLeft } from "lucide-react";
-import torresLogo from "@/assets/logos/torres.png.asset.json";
+import torresLogoSrc from "@/assets/media/torres.png";
+const torresLogo = { url: torresLogoSrc };
 
 export const Route = createFileRoute("/videos")({
   head: () => ({
