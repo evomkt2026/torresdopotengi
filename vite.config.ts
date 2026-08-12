@@ -10,6 +10,7 @@ export default defineConfig({
 vite: {
   base: "/torresdopotengi/",
 },
+  nitro: { preset: "static" },
   tanstackStart: {
     prerender: {
       enabled: true,
